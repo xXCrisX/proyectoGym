@@ -36,28 +36,33 @@ class Actividad extends BaseController
     }
     public function insertar()
     {
-        $session=session();
-        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
-             return redirect()->to(base_url('/login'));
-        }
-        $data1 ['nombre']=$session->get('alias');
 
         if (!$this->request->is('post'))
         {
             $this->ver();
         }
         $rules=[
+            'foto'=>'rwequired',
+            'nombre'=>'required',
+            'fecha'=>'required',
             'horaI'=>'required',
             'horaF'=>'required',
-            'tipoEn'=>'required',
+            'tipoAct'=>'required',
+            'dificultad'=>'reuired',
+            'objetivo'=>'required',
             'capacidad'=>'required',
             'idUsuario'=>'required'
         ];
         
         $data=[
+        "foto"=>$_POST['foto'],
+        "nombre"=>$_POST['nombre'],
+        "fecha"=>$_POST['fecha'],
         "horaI"=>$_POST['horaI'],      
         "horaF"=> $_POST['horaF'],
-        "tipoEn"=> $_POST['tipoEn'],
+        "tipoAct"=> $_POST['tipoEn'],
+        "dificultad"=>$_POST['dificultad'],
+        'obetivo'=>$_POST['objetivo'],
         "capacidad"=>$_POST['capacidad'],
         "idUsuario"=>$_POST['idUsuario'],
         ];

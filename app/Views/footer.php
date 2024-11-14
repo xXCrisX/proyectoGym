@@ -29,6 +29,7 @@
                 if(tipoSeleccionado=="1"){
                     this.selectEntr();
                 }
+                
                 if(tipoSeleccionado=="2"){
                     this.selectSoc();
                 }
