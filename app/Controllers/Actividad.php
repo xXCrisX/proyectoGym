@@ -14,7 +14,7 @@ class Actividad extends BaseController
         }
         $data1 ['nombre']=$session->get('alias');
         $ActividadM=model('ActividadModel');
-        $data['actividad']=$ActividadM->findAll();
+        $data['actividad']=$ActividadM->verActividad();
         return view('head').
                view('menu',$data1).
                view('actividad/ver',$data).
@@ -42,16 +42,17 @@ class Actividad extends BaseController
             $this->ver();
         }
         $rules=[
-            'foto'=>'rwequired',
+            'foto'=>'required',
             'nombre'=>'required',
             'fecha'=>'required',
             'horaI'=>'required',
             'horaF'=>'required',
             'tipoAct'=>'required',
-            'dificultad'=>'reuired',
+            "descripcion"=>"required",
+            'dificultad'=>'required',
             'objetivo'=>'required',
             'capacidad'=>'required',
-            'idUsuario'=>'required'
+            'idEntrenador'=>'required'
         ];
         
         $data=[
@@ -60,25 +61,26 @@ class Actividad extends BaseController
         "fecha"=>$_POST['fecha'],
         "horaI"=>$_POST['horaI'],      
         "horaF"=> $_POST['horaF'],
-        "tipoAct"=> $_POST['tipoEn'],
+        "tipoAct"=> $_POST['tipoAct'],
+        "descripcion"=>$_POST['descripcion'],
         "dificultad"=>$_POST['dificultad'],
         'obetivo'=>$_POST['objetivo'],
         "capacidad"=>$_POST['capacidad'],
-        "idUsuario"=>$_POST['idUsuario'],
+        "idEntrenador"=>$_POST['idEntrenador']
         ];
 
            if(!$this->validate($rules)){
              return 
              view('head').
              view('menu').
-             view('actividads/agregar',[
+             view('actividad/agregar',[
                 'validation'=> $this->validator
              ]).
              view('footer');
            }else{
             $ActividadM=model('ActividadModel');
             $ActividadM->insert($data);
-            return redirect()->to(base_url('/actividads'));    
+            return redirect()->to(base_url('/actividad'));    
            }
 
     }
@@ -90,9 +92,8 @@ class Actividad extends BaseController
         }
         $data1 ['nombre']=$session->get('alias');
         $ActividadM=model('ActividadModel');
-        $data['idactividad']=$idactividad;
+        $data['actividad']=$ActividadM->where('idActividad',$idactividad)->findAll();
         $data['entrenador']=$ActividadM->entrenador();
-        
       return view('head').
              view('menu',$data1).
             view('actividad/editar',$data).
@@ -101,15 +102,21 @@ class Actividad extends BaseController
     public function actualizar()
     {
         $ActividadM=model('ActividadModel');
-        $idactividad=$_POST['idactividad'];
+        $idActividad=$_POST['idActividad'];
         $data=[
-            "horaI"=>$_POST['horaI'],      
-            "horaF"=> $_POST['horaF'],
-            "tipoEn"=> $_POST['tipoEn'],
-            "capacidad"=>$_POST['capacidad'],
-            "idUsuario"=>$_POST['idUsuario'],
+        "foto"=>$_POST['foto'],
+        "nombre"=>$_POST['nombre'],
+        "fecha"=>$_POST['fecha'],
+        "horaI"=>$_POST['horaI'],      
+        "horaF"=> $_POST['horaF'],
+        "tipoAct"=> $_POST['tipoAct'],
+        "descripcion"=>$_POST['descripcion'],
+        "dificultad"=>$_POST['dificultad'],
+        'objetivo'=>$_POST['objetivo'],
+        "capacidad"=>$_POST['capacidad'],
+        "idEntrenador"=>$_POST['idEntrenador']
         ];
-        $ActividadM->set($data)->where('idactividad',$idactividad)->update();
+        $ActividadM->set($data)->where('idActividad',$idActividad)->update();
         return redirect ()->to(base_url('/actividad')) ;
     }
     public function eliminar($idactividad)

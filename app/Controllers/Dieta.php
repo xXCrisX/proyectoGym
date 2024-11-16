@@ -48,21 +48,27 @@ class Dieta extends BaseController
         $rules=[
             'descripcion'=>'required',
             'recomendacion'=>'required',
-            'opcion'=>'required',
-            'tiempoComida'=>'required'
+            'calorias'=>'required',
+            'objetivo'=>'required',
+            'foto'=>'required',
+            'duracionSemanas'=>'required',
+            'tiempoDeComida'=>'required'
         ];
         
         $data=[
         "descripcion"=>$_POST['descripcion'],      
         "recomendacion"=> $_POST['recomendacion'],
-        "opcion"=> $_POST['opcion'],
-        "tiempoComida"=> $_POST['tiempoComida']
+        "calorias"=> $_POST['calorias'],
+        "objetivo"=> $_POST['objetivo'],
+        "foto"=>$_POST['foto'],
+        "duracionSemanas"=>$_POST['duracionSemanas'],
+        "tiempoDeComida"=>$_POST['tiempoDeComida']
         ];
 
            if(!$this->validate($rules)){
              return 
              view('head').
-             view('menu').
+             view('menu',$data1).
              view('dieta/agregar',[
                 'validation'=> $this->validator
              ]).
@@ -96,8 +102,11 @@ class Dieta extends BaseController
         $data=[
             "descripcion"=>$_POST['descripcion'],      
             "recomendacion"=> $_POST['recomendacion'],
-            "opcion"=> $_POST['opcion'],
-            "tiempoComida"=> $_POST['tiempoComida']
+            "calorias"=> $_POST['calorias'],
+            "objetivo"=> $_POST['objetivo'],
+            "foto"=>$_POST['foto'],
+            "duracionSemanas"=>$_POST['duracionSemanas'],
+            "tiempoDeComida"=>$_POST['tiempoDeComida']
         ];
         $dietaM->set($data)->where('idDieta',$idDieta)->update();
         return redirect ()->to(base_url('/dietas')) ;

@@ -200,3 +200,174 @@ INFO - 2024-11-14 19:42:11 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-11-14 19:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-14 20:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-14 20:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:20:09 --> ErrorException: Undefined array key "tipoEn"
+[Method: POST, Route: actividad/insertar]
+in APPPATH\Controllers\Actividad.php on line 63.
+ 1 APPPATH\Controllers\Actividad.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipoEn"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\Actividad.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-14 20:20:22 --> CodeIgniter\Validation\Exceptions\ValidationException: "rwequired" is not a valid rule.
+[Method: POST, Route: actividad/insertar]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('rwequired')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('foto', 'foto', 'images (2).jpeg', [...], [...], 'foto')
+ 3 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Actividad.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->insertar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-14 20:20:32 --> CodeIgniter\Validation\Exceptions\ValidationException: "reuired" is not a valid rule.
+[Method: POST, Route: actividad/insertar]
+in SYSTEMPATH\Validation\Validation.php on line 345.
+ 1 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reuired')
+ 2 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('dificultad', 'dificultad', 'intermedio', [...], [...], 'dificultad')
+ 3 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Actividad.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->insertar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-14 20:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:21:08 --> ErrorException: Undefined property: stdClass::$idactividad
+[Method: GET, Route: actividad]
+in APPPATH\Views\Actividad\ver.php on line 23.
+ 1 APPPATH\Views\Actividad\ver.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idactividad', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actividad/ver', [], true)
+ 5 APPPATH\Controllers\Actividad.php(20): view('actividad/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-14 20:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:21:25 --> ErrorException: Undefined variable $actividadss
+[Method: GET, Route: actividad]
+in APPPATH\Views\Actividad\ver.php on line 24.
+ 1 APPPATH\Views\Actividad\ver.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $actividadss', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actividad/ver', [], true)
+ 5 APPPATH\Controllers\Actividad.php(20): view('actividad/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-14 20:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:21:37 --> ErrorException: Undefined property: stdClass::$idEtrenador
+[Method: GET, Route: actividad]
+in APPPATH\Views\Actividad\ver.php on line 24.
+ 1 APPPATH\Views\Actividad\ver.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idEtrenador', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actividad/ver', [], true)
+ 5 APPPATH\Controllers\Actividad.php(20): view('actividad/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-14 20:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:22:40 --> ErrorException: Undefined array key "idEntrenador"
+[Method: POST, Route: actividad/insertar]
+in APPPATH\Controllers\Actividad.php on line 67.
+ 1 APPPATH\Controllers\Actividad.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEntrenador"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\Actividad.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-14 20:24:09 --> ErrorException: Undefined array key "idEntrenador"
+[Method: POST, Route: actividad/insertar]
+in APPPATH\Controllers\Actividad.php on line 67.
+ 1 APPPATH\Controllers\Actividad.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEntrenador"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\Actividad.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-14 20:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:24:13 --> ErrorException: Undefined property: stdClass::$idEtrenador
+[Method: GET, Route: actividad]
+in APPPATH\Views\Actividad\ver.php on line 24.
+ 1 APPPATH\Views\Actividad\ver.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idEtrenador', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actividad/ver', [], true)
+ 5 APPPATH\Controllers\Actividad.php(20): view('actividad/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-14 20:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:40:28 --> ErrorException: Undefined variable $horario
+[Method: GET, Route: actividad/editar/1]
+in APPPATH\Views\Actividad\editar.php on line 8.
+ 1 APPPATH\Views\Actividad\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horario', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actividad/editar', [], true)
+ 5 APPPATH\Controllers\Actividad.php(100): view('actividad/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-14 20:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 20:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 20:50:53 --> ErrorException: Undefined variable $horario
+[Method: GET, Route: actividad/editar/3]
+in APPPATH\Views\Actividad\editar.php on line 8.
+ 1 APPPATH\Views\Actividad\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horario', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\Actividad\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('actividad/editar', [], true)
+ 5 APPPATH\Controllers\Actividad.php(100): view('actividad/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Actividad->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Actividad))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')

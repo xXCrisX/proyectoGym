@@ -19,10 +19,9 @@
             <tbody>
                     <?php foreach($asistencia AS $asistencias):?>    
                     <tr>
-                       
                         <td><?= $asistencias->horaE?></td>
                         <td><?= $asistencias->horaS?></td>
-                        <td><?=$asistencias->idSocio?></td>
+                        <td><?=$asistencias->nombre?></td>
                         <td><?=$asistencias->fecha?></td>
                         <td> <a href="<?= base_url('asistencias/editar/').$asistencias->idAsistencia?>" class="btn btn-primary">Editar</a></td>
                     </tr>

@@ -150,7 +150,6 @@ class Usuario extends BaseController
         }
         $data1 ['nombre']=$session->get('alias');
         $usuarioM=model('UsuarioM');
-        $data['idUsuario']=$idUsuario;
         $data['usuario']=$usuarioM->where('idUsuario',$idUsuario)->findAll();
       return view('head').
              view('menu',$data1).

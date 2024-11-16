@@ -14,7 +14,7 @@ class Pago extends BaseController
         }
         $data1 ['nombre']=$session->get('alias');
         $pagoM=model('PagoM');
-        $data['pago']=$pagoM->findAll();
+        $data['pago']=$pagoM->verPago();
         return view('head').
                view('menu',$data1).
                view('pago/ver',$data).
@@ -27,8 +27,8 @@ class Pago extends BaseController
              return redirect()->to(base_url('/login'));
         }
         $data1 ['nombre']=$session->get('alias');
-        $socioM=model('SocioM');
-        $data['usuario']=$socioM->usuario();
+        $pagoM=model('PagoM');
+        $data['socio']=$pagoM->selectSocio();
        return view('head').
               view('menu',$data1).
               view('pago/agregar',$data).
@@ -41,7 +41,6 @@ class Pago extends BaseController
              return redirect()->to(base_url('/login'));
         }
         $data1 ['nombre']=$session->get('alias');
-
         if (!$this->request->is('post'))
         {
             $this->ver();
@@ -49,23 +48,23 @@ class Pago extends BaseController
         $rules=[
             'metodo'=>'required',
             'monto'=>'required',
-            'servicio'=>'required',
             'fechaPago'=>'required',
-            'idSocio'=>'required'
+            'idSocio'=>'required',
+            'fechaFinPago'=>'required'
         ];
         
         $data=[
         "metodo"=>$_POST['metodo'],      
         "monto"=> $_POST['monto'],
-        "servicio"=> $_POST['servicio'],
         "fechaPago"=>$_POST['fechaPago'],
         "idSocio"=>$_POST['idSocio'],
+        "fechaFinPago"=>$_POST['fechaFinPago']
         ];
 
            if(!$this->validate($rules)){
              return 
              view('head').
-             view('menu').
+             view('menu',$data1).
              view('pago/agregar',[
                 'validation'=> $this->validator
              ]).

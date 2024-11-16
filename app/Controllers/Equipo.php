@@ -39,8 +39,9 @@ class Equipo extends BaseController
         if($session->get('logged_in')!=true || $session->get('tipo')!=0){
              return redirect()->to(base_url('/login'));
         }
-        $data1 ['nombre']=$session->get('alias');
-
+        $data1 ['nombre']=$session->get('alias'); 
+        $equipoM=model('EquipoM');
+        $data["equipo"]=$equipoM->findAll();     
         if (!$this->request->is('post'))
         {
             $this->ver();
@@ -49,22 +50,24 @@ class Equipo extends BaseController
             'marca'=>'required',
             'cantidad'=>'required',
             'fechaAdq'=>'required',
-            'fotografia'=>'required',
-            'nombre'=>'required'
+            'foto'=>'required',
+            'nombre'=>'required',
+            'estado'=>'required'
         ];
         
         $data=[
         "marca"=>$_POST['marca'],      
         "cantidad"=> $_POST['cantidad'],
         "fechaAdq"=> $_POST['fechaAdq'],
-        "fotografia"=> $_POST['fotografia'],
-        "nombre"=> $_POST['nombre']
+        "foto"=> $_POST['foto'],
+        "nombre"=> $_POST['nombre'],
+        "estado"=>$_POST['estado']
         ];
 
            if(!$this->validate($rules)){
              return 
              view('head').
-             view('menu').
+             view('menu',$data1).
              view('equipo/agregar',[
                 'validation'=> $this->validator
              ]).
@@ -99,8 +102,9 @@ class Equipo extends BaseController
             "marca"=>$_POST['marca'],      
             "cantidad"=> $_POST['cantidad'],
             "fechaAdq"=> $_POST['fechaAdq'],
-            "fotografia"=> $_POST['fotografia'],
-            "nombre"=> $_POST['nombre']
+            "foto"=> $_POST['foto'],
+            "nombre"=> $_POST['nombre'],
+            "estado"=>$_POST['estado']
         ];
         $equipoM->set($data)->where('idEquipo',$idEquipo)->update();
         return redirect ()->to(base_url('/equipos')) ;

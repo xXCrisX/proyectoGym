@@ -49,4 +49,14 @@ class ActividadModel extends Model
         $query=$db->query($sql);
         return $query->getResult();
     }
+
+    public function verActividad()
+    {
+        $db=db_connect();
+        $sql="SELECT a.idActividad,a.nombre AS nombreAct,a.fecha,a.capacidad,u.nombre FROM actividad AS a
+              INNER JOIN entrenador AS e ON a.idEntrenador=e.idEntrenador
+              INNER JOIN usuario AS u ON e.idUsuario=u.idUsuario";
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
 }

@@ -13,7 +13,7 @@ class DietaM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idDieta','descripcion','recomendacion','opcion','tiempoComida'];
+    protected $allowedFields    = ['idDieta','descripcion','recomendacion','calorias','objetivo','foto','duracionSemanas','tiempoDeComida'];
 
     // Dates
     protected $useTimestamps = true;

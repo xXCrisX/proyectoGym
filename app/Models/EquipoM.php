@@ -13,7 +13,7 @@ class EquipoM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idEquipo','marca','cantidad','fechaAdq','fotografia','nombre'];
+    protected $allowedFields    = ['idEquipo','marca','cantidad','fechaAdq','foto','nombre','estado'];
 
     // Dates
     protected $useTimestamps = true;

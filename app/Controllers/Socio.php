@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\Message;
+
 class Socio extends BaseController
 {
    //No se ocupan las funciones ver, agregar, insertar.
@@ -157,20 +159,21 @@ class Socio extends BaseController
         $cta=$_POST['cta'];
         $alias=$_POST['alias'];
         $session=session();
-
         $result=$socioM->validarSocio($alias,$cta);
         if(count($result)>0){
             $newData=[
                 "idSocio"=>$result[0]->idSocio,
                 "nombre"=>$result[0]->nombre,
                 "tipo"=>$result[0]->tipo,
-                "logged_in"=>true
+                "logged_in"=>true,
+                "fechaFinPago"=>$result[0]->fechaFinPago
             ];
             $session->set($newData);
             return view('head').
                    view('/socio/prueba');
         }else{
-            print "ora culero";
+            return view('head').
+                   view('loginSocio');
         }
     }
 

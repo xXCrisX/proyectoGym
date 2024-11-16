@@ -82,6 +82,15 @@ $routes->post('/asistencias/insertar','Asistencia::insertar');
 $routes->get('/asistencias/editar/(:num)','Asistencia::editar/$1');
 $routes->post('/asistencias/actualizar','Asistencia::actualizar');
 
+/**CRUD de ejercicios */
+$routes->get('/ejercicios','Ejercicio::ver');
+$routes->get('/ejercicios/agregar','Ejercicio::agregar');
+$routes->post('/ejercicios/insertar','Ejercicio::insertar');
+$routes->get('/ejercicios/editar/(:num)','Ejercicio::editar/$1');
+$routes->post('/ejercicios/actualizar','Ejercicio::actualizar');
+$routes->get('/ejercicios/eliminar/(:num)','Ejercicio::eliminar/$1');
+
+
 /**Inicio */
 $routes->get('/inicio','Pagina::ver');
 

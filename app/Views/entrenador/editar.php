@@ -16,8 +16,6 @@
             <input type="text" name="apellidoM" class="form-control" id="apelldioM" required value="<?=$entrenador[0]->apellidoM;?>">
             <label for="curp" class="form-label">curp: </label>
             <input type="text" name="curp" class="form-control" id="curp" value="<?=$entrenador[0]->curp;?>">
-            <label for="especialidad" class="form-label">especialidad: </label>
-            <input type="text" name="especialidad" class="form-control" id="especialidad" required value="<?=$entrenador[0]->especialidad;?>">
             <label for="cta" class="form-label">Contraseña</label>
             <input type="password" name="cta" class="form-control" id="cta" placeholder="Contraseña" required value="<?= $entrenador[0]->cta;?>">
             <p>selecciona tu sexo:</p>

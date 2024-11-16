@@ -47,13 +47,23 @@ class Rutina extends BaseController
         $rules=[
             'tipoRutina'=>'required',
             'descripcion'=>'required',
-            'recomendacion'=>'required'
+            'recomendacion'=>'required',
+            'nivelDificultad'=>'required',
+            'objetivo'=>'required',
+            'duracionSemanas'=>'required',
+            'foto'=>'required',
+            'dia'=>'required'
         ];
         
         $data=[
         "tipoRutina"=>$_POST['tipoRutina'],      
         "descripcion"=> $_POST['descripcion'],
-        "recomendacion"=> $_POST['recomendacion']
+        "recomendacion"=> $_POST['recomendacion'],
+        "nivelDificultad"=>$_POST['nivelDificultad'],
+        "objetivo"=>$_POST['objetivo'],
+        "duracionSemanas"=>$_POST['duracionSemanas'],
+        "foto"=>$_POST['foto'],
+        "dia"=>$_POST['dia']
         ];
 
            if(!$this->validate($rules)){
@@ -93,7 +103,12 @@ class Rutina extends BaseController
         $data=[
             "tipoRutina"=>$_POST['tipoRutina'],      
             "descripcion"=> $_POST['descripcion'],
-            "recomendacion"=> $_POST['recomendacion']
+            "recomendacion"=> $_POST['recomendacion'],
+            "nivelDificultad"=>$_POST['nivelDificultad'],
+            "objetivo"=>$_POST['objetivo'],
+            "duracionSemanas"=>$_POST['duracionSemanas'],
+            "foto"=>$_POST['foto'],
+            "dia"=>$_POST['dia']
         ];
         $rutinaM->set($data)->where('idRutina',$idRutina)->update();
         return redirect ()->to(base_url('/rutinas')) ;

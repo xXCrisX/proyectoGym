@@ -13,7 +13,7 @@ class RutinaM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idRutina','tipoRutina','descripcion','recomendacion'];
+    protected $allowedFields    = ['idRutina','tipoRutina','descripcion','recomendacion','nivelDificultad','objetivo','duracionSemanas','foto','dia'];
 
     // Dates
     protected $useTimestamps = true;

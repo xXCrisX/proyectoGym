@@ -15,7 +15,7 @@ class Asistencia extends BaseController
         }
         $data1 ['nombre']=$session->get('alias');
         $asistenciaM=model('AsistenciaM');
-        $data['asistencia']=$asistenciaM->findAll();
+        $data['asistencia']=$asistenciaM->verAsistencia();
         return view('head').
                view('menu',$data1).
                view('asistencia/ver',$data).
@@ -28,8 +28,8 @@ class Asistencia extends BaseController
              return redirect()->to(base_url('/login'));
         }
         $data1 ['nombre']=$session->get('alias');
-        $socioM=model('SocioM');
-        $data['usuario']=$socioM->usuario();
+        $asistenciaM=model('AsistenciaM');
+        $data['socio']=$asistenciaM->selectSocio();
        return view('head').
               view('menu',$data1).
               view('asistencia/registrar',$data).
@@ -87,8 +87,7 @@ class Asistencia extends BaseController
         $asistenciaM=model('AsistenciaM');
         $data['idAsistencia']=$idAsistencia;
         $data['asistencia']=$asistenciaM->where('idAsistencia',$idAsistencia)->findAll();
-        $socioM=model('SocioM');
-        $data['socio']=$socioM->usuario();
+        $data['socio']=$asistenciaM->selectSocio();
       return view('head').
              view('menu',$data1).
             view('asistencia/editar',$data).

@@ -13,7 +13,7 @@ class PagoM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idPago','metodo','monto','fechaPago','idSocio'];
+    protected $allowedFields    = ['idPago','metodo','monto','fechaPago','idSocio','fechaFinPago'];
 
     // Dates
     protected $useTimestamps = true;
@@ -38,4 +38,23 @@ class PagoM extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function selectSocio()
+    {
+        $db=db_connect();
+        $sql="SELECT * FROM socio AS s
+              INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario;";
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
+    
+    public function verPago()
+    {
+        $db=db_connect();
+        $sql="SELECT p.idPago,p.monto,fechaFinPago,u.nombre FROM pago AS p
+              INNER JOIN socio AS s ON p.idSocio =s.idSocio
+              INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario";
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
 }

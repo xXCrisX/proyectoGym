@@ -39,16 +39,6 @@ class SocioM extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function usuario()
-    {
-        $db=db_connect();
-        $sql ="select nombre,idSocio
-        from Socio ";
-        
-        $query=$db->query($sql);
-
-        return $query->getResult();
-    }
     public function editarSocio($idSocio)
     {
         $db=db_connect();
@@ -61,10 +51,14 @@ class SocioM extends Model
 
     public function validarSocio($alias,$cta)
     {
+        $dia=date('d');
+        $mes=date('m');
+        $anio=date('y');
         $db=db_connect();
-        $sql="SELECT s.idSocio,u.nombre,u.tipo FROM socio AS s
+        $sql="SELECT s.idSocio,u.nombre,u.tipo,p.fechaFinPago FROM socio AS s
               INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario
-              WHERE u.alias="."'".$alias."'"." AND u.cta="."'".$cta."'"."";
+              INNER JOIN pago AS p ON s.idSocio=p.idSocio
+              WHERE u.alias=" . "'" . $alias . "'"." AND u.cta=" . "'" . $cta. "'"."AND p.fechaFinPago>=" ."'".$anio."-".$mes."-".$dia.   "'";
         $query=$db->query($sql);
         return $query->getResult();
     }

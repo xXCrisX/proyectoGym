@@ -2,18 +2,20 @@
     <div class="row">
         <div class="col">
             <h1>Rutinas</h1>
-            <a href="<?= base_url('rutinas/agregar/');?>" class="btn btn-success">Agregar</a>
+            <a href="<?= base_url('rutinas/agregar/');?>" class="btn btn-success margen">Agregar</a>
         </div>
     </div>
 
 <div class="row justify-content-center">
-    <div class="col-auto table-responsive-sm" >
-        <table class='table table-dark'>
+    <div class="col-10 table-responsive-sm" >
+        <table class='table table-dark text-center'>
             <thead>
                 <th>Id Rutina</th>
                 <th>Tipo de Rutina</th> 
-                <th>Descripcion</th>      
+                <th>Descripción</th>      
                 <th>Recomendaciones</th>
+                <th>Día</th>
+                <th></th>
                 <th></th>
             </thead>
             <tbody>
@@ -24,8 +26,9 @@
                         <td><?= $rutinas->tipoRutina?></td>
                         <td><?=$rutinas->descripcion?></td>
                         <td><?=$rutinas->recomendacion?></td>
-                        <td><a href="<?= base_url('rutinas/editar/'.$rutinas->idRutina);?>" class="btn btn-primary">Editar</a>
-                        <a href="<?= base_url('rutinas/eliminar/'.$rutinas->idRutina);?>"class="btn btn-danger">Eliminar</a></td>
+                        <td><?=$rutinas->dia;?></td>
+                        <td><a href="<?= base_url('rutinas/editar/'.$rutinas->idRutina);?>" class="btn btn-primary">Editar</a></td>
+                        <td><a href="<?= base_url('rutinas/eliminar/'.$rutinas->idRutina);?>"class="btn btn-danger">Eliminar</a></td>
                      
                     </tr>
                     <?php endforeach ?>

@@ -17,6 +17,8 @@
             <input type="time" name="horaF" class="form-control" id="horaF"   required value="<?= set_value('horaF')?>">    
             <label for="tipoEn" class="form-label">Tipo De entrenamiento : </label>
             <input type="text" name="tipoAct" class="form-control" id="tipoAct" placeholder="Tipo de actividad"  required value="<?= set_value('tipoAct')?>">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input type="descripcion" class="form-control" name="descripcion" id="descripcion" placeholder="Escribe una descripción para la actividad" required value="<?=set_value('descripcion');?>">
             <label for="dificultad" class="form-label">Dificultad de la actividad</label>
             <select name="dificultad" id="dificultad" class="form-control">
                 <option value="principiante">Principiante</option>
@@ -32,8 +34,8 @@
             </select>
             <label for="capacidad" class="form-label">Cantidad de participantes : </label>
             <input type="text" name="capacidad" class="form-control" id="capacidad" placeholder="Escribe el numero de total de participantes"  required value="<?= set_value('capacidad')?>">
-            <label for="idUsuario" class="form-label">Elige el nombre del Entredador</label>
-            <select id="idUsuario" name="idUsuario" class="form-control">
+            <label for="idEntrenador" class="form-label">Elige el nombre del Entredador</label>
+            <select id="idEntrenador" name="idEntrenador" class="form-control" required value="<?=set_value('idEntrenador');?>">
             <?php foreach ($entrenador as $key):?>
             <option value="<?= $key-> idEntrenador ?>"><?= $key-> nombre; print" ". $key->apellidoP ; print " (".$key->alias.")" ;?></option>
             <?php endforeach?>

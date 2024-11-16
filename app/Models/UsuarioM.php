@@ -44,7 +44,7 @@ class UsuarioM extends Model
         $db=db_connect();
         $sql ="select alias, tipo
         from Usuario 
-        where alias = '".$alias."' and cta ='". $cta."'";
+        where alias = '".$alias."' and cta ='". $cta."'and tipo<2";
         
         $query=$db->query($sql);
 

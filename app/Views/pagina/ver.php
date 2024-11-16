@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="margin-bottom: 350px;">
     <div class="row">
         <div class="col">
             <h1>GOD</h1>

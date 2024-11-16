@@ -38,4 +38,23 @@ class AsistenciaM extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function selectSocio()
+    {
+        $db=db_connect();
+        $sql='SELECT * FROM socio AS s
+              INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario';
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
+
+    public function verAsistencia()
+    {
+        $db=db_connect();
+        $sql='SELECT * FROM asistencia AS a
+              INNER JOIN socio AS s ON a.idSocio=s.idSocio
+              INNER JOIN usuario AS u ON u.idUsuario=s.idUsuario';
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
 }
