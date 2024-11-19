@@ -8,10 +8,12 @@
 
 <div class="row justify-content-center">
     <div class="col-8 table-responsive-sm" >
+    <?php //print_r($pago)?>
         <table class='table table-dark text-center'>
             <thead>
                 <th>Id Pago</th>
                 <th>Monto</th> 
+                <th>Fecha Pago</th>
                 <th>Fecha Fin de Pago</th>      
                 <th>Nombre del socio</th>
             </thead>
@@ -20,6 +22,7 @@
                     <tr>
                         <td><?= $pagos->idPago?></td>
                         <td><?= $pagos->monto?></td>
+                        <td><?=$pagos->fechaPago;?></td>
                         <td><?=$pagos->fechaFinPago?></td>
                         <td><?=$pagos->nombre?></td>
                     </tr>

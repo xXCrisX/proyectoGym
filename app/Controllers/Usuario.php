@@ -205,6 +205,7 @@ class Usuario extends BaseController
                 'alias'=>$result[0]->alias,
                 'tipo'=>$result[0]->tipo,
                 'logged_in'=>TRUE,
+                'idUsuario'=>$result[0]->idUsuario
             ];
             $session->set($newdata);
             return redirect()->to(base_url('/inicio'));

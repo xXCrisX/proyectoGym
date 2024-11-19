@@ -36,13 +36,20 @@ class Actividad extends BaseController
     }
     public function insertar()
     {
+        $session=session();
+        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
+             return redirect()->to(base_url('/login'));
+        }
+        $data1 ['nombre']=$session->get('alias');
+        $ActividadM=model('ActividadModel');
+        $data2['entrenador']=$ActividadM->entrenador();
 
         if (!$this->request->is('post'))
         {
             $this->ver();
         }
         $rules=[
-            'foto'=>'required',
+        
             'nombre'=>'required',
             'fecha'=>'required',
             'horaI'=>'required',
@@ -56,7 +63,6 @@ class Actividad extends BaseController
         ];
         
         $data=[
-        "foto"=>$_POST['foto'],
         "nombre"=>$_POST['nombre'],
         "fecha"=>$_POST['fecha'],
         "horaI"=>$_POST['horaI'],      
@@ -68,16 +74,33 @@ class Actividad extends BaseController
         "capacidad"=>$_POST['capacidad'],
         "idEntrenador"=>$_POST['idEntrenador']
         ];
-
-           if(!$this->validate($rules)){
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];  
+        $file=$this->request->getFile('foto');
+           if(!$this->validate($rules) or !$this->validate($validar)){
              return 
              view('head').
-             view('menu').
-             view('actividad/agregar',[
+             view('menu',$data1).
+             view('actividad/agregar',$data2,[
                 'validation'=> $this->validator
              ]).
              view('footer');
            }else{
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images');
+                $newFileName = 'actividad_' . "1". '.' . $file->getExtension();
+                $file->move($route,$newFileName);
+                    $data['foto']="images".$newFileName;
+            }
             $ActividadM=model('ActividadModel');
             $ActividadM->insert($data);
             return redirect()->to(base_url('/actividad'));    

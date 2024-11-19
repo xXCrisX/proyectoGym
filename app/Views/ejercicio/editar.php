@@ -17,12 +17,6 @@
                 <input type="text" name="repeticiones" id="repeticiones" class="form-control" required value="<?=$ejercicio[0]->repeticiones;?>" placeholder="Numero de repeticiones">
                 <label for="descanso" class="form-label">Descanso</label>
                 <input type="text" name="descanso" id="descanso" required value="<?=$ejercicio[0]->descanso;?>" class="form-control" placeholder="Descanso entre series">
-                <label for="idEquipo" class="form-label">Elije el euquipo a utilizar</label>
-                <select name="idEquipo" id="idEquipo" class="form-select" required value="<?=$ejercicio[0]->idEquipo;?>">
-                    <?php foreach($equipo as $key):?>
-                    <option value="<?=$key->idEquipo?>" <?=$ejercicio[0]->idEquipo ==$key->idEquipo ? "selected":'';?>><?=$key->nombre; print" (".$key->estado .")"; ?></option>
-                    <?php endforeach?>
-                </select>
                 <label for="idRutina" class="form-label">Asigne a una rutina</label>
                 <select name="idRutina" id="idRutina" class="form-select" required value="<?=$ejercicio[0]->idRutina;?>">
                     <?php foreach($rutina as $key):?>

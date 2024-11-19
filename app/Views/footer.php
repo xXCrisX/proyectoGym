@@ -1,10 +1,19 @@
-<footer class="bg-black text-white text-center py-3">
+</div>
+
+
+<footer class="text-white text-center py-3">
         <div class="container">
             <p style="color:white">&copy; el orden de los factores no altera el producto c:.</p>
+            <ul class="list-inline">
+      <li class="list-inline-item"><a href="#about" class="text-white text-decoration-none">Sobre nosotros</a></li>
+      <li class="list-inline-item"><a href="#services" class="text-white text-decoration-none">Servicios</a></li>
+      <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none">Contacto</a></li>
+      <li class="list-inline-item"><a href="#privacy" class="text-white text-decoration-none">Política de privacidad</a></li>
+    </ul>
         </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="<?=base_url('bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+    <script src="<?=base_url('bootstrap/js/bootstrap.min.js')?>"></script>
 </body>
 </html>
 <script>
@@ -63,4 +72,27 @@
             }
         }
     }).mount('#app')
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const agregarEquipo = document.getElementById('agregarEquipo');
+  
+  if (agregarEquipo) {
+    agregarEquipo.addEventListener('show.bs.modal', event => {
+      // Botón que disparó el modal
+      const button = event.relatedTarget;
+      // Extrae la información del atributo data-id-ejercicio
+      const idEjercicio = button.getAttribute('data-id-ejercicio');
+
+      // Asigna el valor al input hidden
+      const inputIdEjercicio = document.getElementById('idEjercicioHidden');
+      inputIdEjercicio.value = idEjercicio;
+      const checkboxes = agregarEquipo.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+      checkbox.checked = false; // Desmarca todos los checkboxes
+    })
+    });
+  }
+  
+});
 </script>

@@ -51,7 +51,7 @@ class PagoM extends Model
     public function verPago()
     {
         $db=db_connect();
-        $sql="SELECT p.idPago,p.monto,fechaFinPago,u.nombre FROM pago AS p
+        $sql="SELECT p.idPago,p.monto,p.fechaFinPago,p.fechaPago,u.nombre FROM pago AS p
               INNER JOIN socio AS s ON p.idSocio =s.idSocio
               INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario";
         $query=$db->query($sql);

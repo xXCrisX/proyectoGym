@@ -39,6 +39,12 @@
         <li>
           <a class="nav-link" href="<?=base_url('/ejercicios')?>">Ejercicios</a>
         </li>
+        <li>
+          <a class="nav-link" href="<?=base_url('/socioRutina')?>">Socios y sus rutinas</a>
+        </li>
+        <li>
+          <a class="nav-link" href="<?=base_url('/socioDieta')?>">Socios y sus Dietas</a>
+        </li>
         <?php endif?>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">

@@ -1,0 +1,1835 @@
+INFO - 2024-11-17 14:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 14:17:11 --> ErrorException: Undefined array key "cta"
+[Method: POST, Route: acceder]
+in APPPATH\Controllers\Usuario.php on line 198.
+ 1 APPPATH\Controllers\Usuario.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cta"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\Usuario.php', 198)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 14:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 14:46:21 --> ErrorException: Undefined property: stdClass::$Nombre_Equipo
+[Method: GET, Route: ejercicios]
+in APPPATH\Views\ejercicio\ver.php on line 27.
+ 1 APPPATH\Views\ejercicio\ver.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Nombre_Equipo', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(18): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 14:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 14:46:55 --> ErrorException: Undefined property: stdClass::$idEquipo
+[Method: GET, Route: ejercicios/editar/1]
+in APPPATH\Views\ejercicio\editar.php on line 21.
+ 1 APPPATH\Views\ejercicio\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idEquipo', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\editar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/editar', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(94): view('ejercicio/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 14:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 14:48:14 --> ErrorException: Undefined variable $equipo
+[Method: GET, Route: ejercicios/agregar]
+in APPPATH\Views\ejercicio\agregar.php on line 21.
+ 1 APPPATH\Views\ejercicio\agregar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $equipo', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\agregar.php', 21)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/agregar', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(33): view('ejercicio/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 14:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 14:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 15:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 16:09:19 --> ParseError: syntax error, unexpected end of file, expecting variable or "${" or "{$"
+[Method: GET, Route: ejercicios/agregar]
+in APPPATH\Views\ejercicio\agregar.php on line 64.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/agregar', [], true)
+ 3 APPPATH\Controllers\Ejercicio.php(34): view('ejercicio/agregar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->agregar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 16:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 16:47:41 --> ErrorException: Undefined variable $equipo
+[Method: GET, Route: ejercicios]
+in APPPATH\Views\ejercicio\ver.php on line 49.
+ 1 APPPATH\Views\ejercicio\ver.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $equipo', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(18): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 16:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 16:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 17:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:06:07 --> ErrorException: Undefined variable $ket
+[Method: GET, Route: ejercicios]
+in APPPATH\Views\ejercicio\ver.php on line 43.
+ 1 APPPATH\Views\ejercicio\ver.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ket', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 43)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(19): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:06:33 --> ErrorException: Undefined variable $ket
+[Method: GET, Route: ejercicios]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 APPPATH\Views\ejercicio\ver.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ket', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(19): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:08:04 --> ErrorException: Undefined variable $ket
+[Method: GET, Route: ejercicios]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 APPPATH\Views\ejercicio\ver.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ket', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(19): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:08:12 --> ErrorException: Undefined variable $ket
+[Method: GET, Route: ejercicios]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 APPPATH\Views\ejercicio\ver.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ket', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(19): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:08:17 --> ErrorException: Undefined variable $ket
+[Method: GET, Route: ejercicios]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 APPPATH\Views\ejercicio\ver.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ket', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(19): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:54:36 --> Error: Object of class App\Controllers\EjercicioEquipo could not be converted to string
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:55:04 --> Error: Object of class App\Controllers\EjercicioEquipo could not be converted to string
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:55:16 --> Error: Object of class App\Controllers\EjercicioEquipo could not be converted to string
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:55:26 --> Error: Object of class App\Controllers\EjercicioEquipo could not be converted to string
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:55:47 --> Error: Object of class App\Controllers\EjercicioEquipo could not be converted to string
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:56:03 --> Error: Object of class App\Controllers\EjercicioEquipo could not be converted to string
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:57:07 --> Error: Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 18:57:38 --> CodeIgniter\Exceptions\ModelException: "App\Models\EjercicioEquipoModel" model class does not specify a Primary Key.
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Model.php on line 695.
+ 1 SYSTEMPATH\Model.php(695): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\EjercicioEquipoModel')
+ 2 SYSTEMPATH\Model.php(350): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EjercicioEquipo.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 18:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 18:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:12:52 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 19.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:55:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicios.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicios.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicios', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:57:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicios.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicios.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicios', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:57:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicios/.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicios/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicios/', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicios/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:58:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicio/.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicio/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicio/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:58:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicio/.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicio/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicio/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:58:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicio.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicio.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicio', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:58:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicio/ver/.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicio/ver/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver/', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicio/ver/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 19:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:58:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ejercicio/ver/.php"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ejercicio/ver/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver/', [], true)
+ 3 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicio/ver/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 19:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 19:59:24 --> ErrorException: Undefined variable $ejercicio
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Views\ejercicio\ver.php on line 20.
+ 1 APPPATH\Views\ejercicio\ver.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ejercicio', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\EjercicioEquipo.php(26): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:19:06 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 20.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:20:25 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 20.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:20:31 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 20.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:21:44 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 20.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:21:54 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 20.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:24:17 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 28.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:24:21 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 28.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 20:27:15 --> ErrorException: Undefined array key "idEquipo"
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 35.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEquipo"', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 20:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 20:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:35:32 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:36:52 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:37:06 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:37:12 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:37:29 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:37:44 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:39:09 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:39:38 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:39:59 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:40:43 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:48:39 --> ErrorException: Array to string conversion
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Controllers\EjercicioEquipo.php on line 24.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Controllers\\EjercicioEquipo.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 21:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 21:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 21:59:34 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Models\EjercicioEquipoModel.php on line 56.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(28): App\Models\EjercicioEquipoModel->insertEquipoEjercicio('3', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 22:01:44 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Models\EjercicioEquipoModel.php on line 56.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(28): App\Models\EjercicioEquipoModel->insertEquipoEjercicio('3', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 22:01:48 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Models\EjercicioEquipoModel.php on line 56.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(28): App\Models\EjercicioEquipoModel->insertEquipoEjercicio('3', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 22:05:09 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in APPPATH\Models\EjercicioEquipoModel.php on line 56.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(28): App\Models\EjercicioEquipoModel->insertEquipoEjercicio('3', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 22:21:06 --> BadMethodCallException: Call to undefined method App\Models\EjercicioEquipoModel::inser
+[Method: POST, Route: ejercicioEquipo/insertar/]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\EjercicioEquipo.php(28): CodeIgniter\Model->__call('inser', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EjercicioEquipo->insertar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EjercicioEquipo))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 22:46:22 --> mysqli_sql_exception: Unknown column 'eq.idEquipo' in 'on clause' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(66): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 22:46:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'eq.idEquipo' in 'on clause'
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(66): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:46:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'eq.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ')
+ 3 APPPATH\Models\EjercicioModel.php(66): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:46:22 --> [Caused by] mysqli_sql_exception: Unknown column 'eq.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ')
+ 4 APPPATH\Models\EjercicioModel.php(66): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,ep.nombre AS nombreEquipo FROM Ejercicio AS e
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              
+              INNER JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              ')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 22:50:03 --> mysqli_sql_exception: Unknown column 'ep.nombre' in 'field list' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 22:50:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.nombre' in 'field list'
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina')
+ 3 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:03 --> [Caused by] mysqli_sql_exception: Unknown column 'ep.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina')
+ 4 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idRutina=eq.idRutina')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 22:50:27 --> mysqli_sql_exception: Unknown column 'ep.nombre' in 'field list' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 22:50:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.nombre' in 'field list'
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:27 --> [Caused by] mysqli_sql_exception: Unknown column 'ep.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 22:50:29 --> mysqli_sql_exception: Unknown column 'ep.nombre' in 'field list' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 22:50:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.nombre' in 'field list'
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:29 --> [Caused by] mysqli_sql_exception: Unknown column 'ep.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 22:50:38 --> mysqli_sql_exception: Unknown column 'e.idEquipo' in 'on clause' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 22:50:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.idEquipo' in 'on clause'
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:38 --> [Caused by] mysqli_sql_exception: Unknown column 'e.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 22:50:55 --> mysqli_sql_exception: Unknown column 'e.idEquipo' in 'on clause' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 22:50:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.idEquipo' in 'on clause'
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:50:55 --> [Caused by] mysqli_sql_exception: Unknown column 'e.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 4 APPPATH\Models\EjercicioModel.php(63): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular FROM EjercicioEquipo AS eq
+              LEFT JOIN ejercicio AS e ON e.idEquipo=eq.idEquipo')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 22:51:26 --> ErrorException: Undefined property: stdClass::$tipoRutina
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 26.
+ 1 APPPATH\Views\ejercicio\ver.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tipoRutina', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(19): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 22:59:11 --> mysqli_sql_exception: Unknown column 'ep.idEquipo' in 'on clause' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 22:59:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.idEquipo' in 'on clause'
+[Method: GET, Route: ejercicios]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:59:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo')
+ 3 APPPATH\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 22:59:11 --> [Caused by] mysqli_sql_exception: Unknown column 'ep.idEquipo' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo')
+ 4 APPPATH\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              INNER JOIN equipo AS qp ON eq.idEquipo=ep.idEquipo')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 22:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 22:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-17 23:03:07 --> mysqli_sql_exception: Unknown column 'ep.idEjercicio' in 'on clause' in C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjer...', 0)
+#1 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjer...')
+#2 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjer...')
+#3 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjer...')
+#4 C:\xampp\htdocs\ProyectoGimnasio_2.0\app\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+#5 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+#6 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+#7 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ProyectoGimnasio_2.0\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ProyectoGimnasio_2.0\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-17 23:03:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.idEjercicio' in 'on clause'
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio')
+ 2 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 23:03:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ep.idEjercicio' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio')
+ 3 APPPATH\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio')
+ 4 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+CRITICAL - 2024-11-17 23:03:07 --> [Caused by] mysqli_sql_exception: Unknown column 'ep.idEjercicio' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio')
+ 4 APPPATH\Models\EjercicioModel.php(65): CodeIgniter\Database\BaseConnection->query('SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEjercicio=ep.idEjercicio')
+ 5 APPPATH\Controllers\Ejercicio.php(16): App\Models\EjercicioModel->verEjercicio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:05:23 --> ErrorException: Undefined property: stdClass::$nombreEquipo
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 APPPATH\Views\ejercicio\ver.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombreEquipo', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(20): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:10:23 --> BadMethodCallException: Call to undefined method App\Models\EjercicioModel::verEquipo
+[Method: GET, Route: ejercicios/]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Ejercicio.php(15): CodeIgniter\Model->__call('verEquipo', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:27:20 --> ErrorException: Undefined property: stdClass::$idEquipo
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 55.
+ 1 APPPATH\Views\ejercicio\ver.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idEquipo', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(21): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:29:05 --> TypeError: Illegal offset type
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 4 APPPATH\Controllers\Ejercicio.php(22): view('ejercicio/ver', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:29:35 --> ErrorException: Undefined variable $i
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 23.
+ 1 APPPATH\Views\ejercicio\ver.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(22): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:29:51 --> ErrorException: Undefined variable $i
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 23.
+ 1 APPPATH\Views\ejercicio\ver.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(22): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:30:19 --> ErrorException: Undefined variable $i
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 APPPATH\Views\ejercicio\ver.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(22): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-17 23:53:36 --> ErrorException: Undefined variable $ke
+[Method: GET, Route: ejercicios/]
+in APPPATH\Views\ejercicio\ver.php on line 28.
+ 1 APPPATH\Views\ejercicio\ver.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ke', 'C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\app\\Views\\ejercicio\\ver.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('ejercicio/ver', [], true)
+ 5 APPPATH\Controllers\Ejercicio.php(22): view('ejercicio/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ejercicio->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejercicio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ProyectoGimnasio_2.0\\public\\index.php')
+INFO - 2024-11-17 23:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-17 23:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

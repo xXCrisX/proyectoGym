@@ -13,7 +13,7 @@ class EjercicioModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nombre','descripcion','grupoMuscular','series','repeticiones','descanso','idEquipo','idRutina'];
+    protected $allowedFields    = ['nombre','descripcion','grupoMuscular','series','repeticiones','descanso','idRutina'];
 
     // Dates
     protected $useTimestamps = true;
@@ -58,10 +58,21 @@ class EjercicioModel extends Model
     public function verEjercicio()
     {
         $db=db_connect();
-        $sql='SELECT e.idEjercicio,e.nombre,e.grupoMuscular,eq.nombre AS Nombre_Equipo,r.tipoRutina FROM Ejercicio AS e
-              INNER JOIN Equipo AS eq ON e.idEquipo=eq.idEquipo
-              INNER JOIN rutina AS r ON e.idRutina=r.idRutina';
+        $sql='SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
+              INNER JOIN rutina AS r ON e.idRutina=r.idRutina
+              LEFT JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo';
         $query=$db->query($sql);
         return $query->getResult();
     }
+    public function verEquipo()
+    {
+        $db=db_connect();
+        $sql='SELECT ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+              LEFT JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo
+              GROUP BY eq.idejercicio';
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
+
 }

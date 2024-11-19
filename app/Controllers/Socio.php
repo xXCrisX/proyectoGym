@@ -173,7 +173,8 @@ class Socio extends BaseController
                    view('/socio/prueba');
         }else{
             return view('head').
-                   view('loginSocio');
+                   view('loginSocio').
+                   view('footer');
         }
     }
 

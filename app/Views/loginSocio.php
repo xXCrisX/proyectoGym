@@ -1,5 +1,5 @@
-<div class="container ">
-    <div class="row justify-content-center">
+<div class="container " style=" ">
+    <div class="row justify-content-end">
         <div class="col-6">
             <form action="<?=base_url('accederSocio')?>" method="POST">
                 <label for="alias" class="form-label">Nombre de usuario</label>

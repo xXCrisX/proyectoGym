@@ -90,8 +90,20 @@ $routes->get('/ejercicios/editar/(:num)','Ejercicio::editar/$1');
 $routes->post('/ejercicios/actualizar','Ejercicio::actualizar');
 $routes->get('/ejercicios/eliminar/(:num)','Ejercicio::eliminar/$1');
 
+/**Crus equipoEJercicio*/
+$routes->post('/ejercicioEquipo/insertar','EjercicioEquipo::insertar');
+$routes->get('/ejercicioEquipo/subir','EjercicioEquipo::subirImagen');
+$routes->post('/upload','EjercicioEquipo::upload');
+
+/**CRUD de socioRutina */
+$routes->get('/socioRutina', 'SocioRutina::ver');
+$routes->get('/socioRutina/agregar','SocioRutina::agregar');
+$routes->post('/socioRutina/insertar','SocioRutina::insertar');
+
+/**CRUD de socioDieta */
+$routes->get('/socioDieta', 'SocioDieta::ver');
+$routes->get('/socioDieta/agregar','SocioDieta::agregar');
+$routes->post('/socioDieta/insertar','SocioDieta::insertar');
 
 /**Inicio */
 $routes->get('/inicio','Pagina::ver');
-
-

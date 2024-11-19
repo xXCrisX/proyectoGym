@@ -16,8 +16,33 @@
         .marButt{
             margin-left: 10px; margin-right: 10px;
         }
+        html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Haz que el contenido principal se expanda para empujar el footer hacia abajo */
+    .main-content {
+      flex: 1;
+      background-color: #282725;
+    }
+
+    /* Asegúrate de que el footer esté al final y sea ancho completo */
+    footer {
+      width: 100%;
+    }
+    footer {
+  background-color: #5A5A5A;
+  color: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+}
+
     </style>
 </head>
 <body>
+<div class="main-content ">
     
 

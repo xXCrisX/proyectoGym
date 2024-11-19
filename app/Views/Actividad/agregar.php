@@ -1,12 +1,12 @@
-<div class="container">
+<div class="container " >
         <div class="row justify-content-center">
         <div class="col-8" > 
-            <h2>Agregar Actividad</h2>
+            <h2 class="text-light">Agregar Actividad</h2>
             <?= validation_list_errors()?>
-            <form action="<?= base_url('actividad/insertar'); ?>" method="POST">
+            <form action="<?= base_url('actividad/insertar'); ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
             <label for="foto" class="form-label">foto</label>
-            <input type="file" class="form-control" name="foto" id="foto" required value="<?=set_value('foto');?>">
+            <input type="file" class="form-control" name="foto" id="foto" accept="image/png,image/jpg,image/jpeg" required value="<?=set_value('foto');?>">
             <label for="nombre" class="form-label">Nombre de actividad</label>
             <input type="text" name="nombre" id="nombre" placeholder="Escribe un nombre para la actividad" class="form-control" required value="<?= set_value('nombre');?>">
             <label for="fecha" class="form-label">Fecha</label>

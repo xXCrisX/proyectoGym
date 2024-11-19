@@ -12,7 +12,10 @@ class Ejercicio extends BaseController
        }
         $alias['nombre']=$session->get('alias');
         $ejercicioM=model('EjercicioModel');
+        $data['equipo']=$ejercicioM->selectEquipo();
         $data['ejercicio']=$ejercicioM->verEjercicio();
+
+        $data[]=$ejercicioM->verEquipo;
         return view('head').
                view('menu',$alias).
                view('ejercicio/ver',$data).
@@ -52,7 +55,6 @@ class Ejercicio extends BaseController
             'series'=>'required',
             'repeticiones'=>'required',
             'descanso'=>'required',
-            'idEquipo'=>'required',
             'idRutina'=>'required'
         ];
         $ejercicio=[
@@ -62,7 +64,6 @@ class Ejercicio extends BaseController
             "series"=>$_POST['series'],
             "repeticiones"=>$_POST['repeticiones'],
             "descanso"=>$_POST['descanso'],
-            "idEquipo"=>$_POST['idEquipo'],
             "idRutina"=>$_POST['idRutina']
         ];
         if(!$this->validate($rules)){
@@ -107,7 +108,6 @@ class Ejercicio extends BaseController
             "series"=>$_POST['series'],
             "repeticiones"=>$_POST['repeticiones'],
             "descanso"=>$_POST['descanso'],
-            "idEquipo"=>$_POST['idEquipo'],
             "idRutina"=>$_POST['idRutina']
         ];
         $ejercicioM->set($data)->where('idEjercicio',$idEjercicio)->update();

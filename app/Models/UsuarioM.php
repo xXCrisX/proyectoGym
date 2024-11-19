@@ -42,7 +42,7 @@ class UsuarioM extends Model
     public function validar($alias,$cta)
     {
         $db=db_connect();
-        $sql ="select alias, tipo
+        $sql ="select alias, tipo, idUsuario
         from Usuario 
         where alias = '".$alias."' and cta ='". $cta."'and tipo<2";
         
