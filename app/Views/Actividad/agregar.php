@@ -1,7 +1,7 @@
 <div class="container " >
         <div class="row justify-content-center">
         <div class="col-8" > 
-            <h2 class="text-light">Agregar Actividad</h2>
+            <h2>Agregar Actividad</h2>
             <?= validation_list_errors()?>
             <form action="<?= base_url('actividad/insertar'); ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">

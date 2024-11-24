@@ -35,14 +35,14 @@
             <input type="text" name="correo" class="form-control" id="correo" placeholder="correo" required value="<?= set_value('correo') ?>">
             
             <label for="tipo" class="form-label">Elige tipo de usuario:</label>
-            <select id="tipo" name="tipo" @change="cambiarTipo" class="form-control" required value="<?=set_value('tipo')?>">
+            <select id="tipo" name="tipo" @change="cambiarTipo" class="form-select" required value="<?=set_value('tipo')?>">
              <option value="0">Admistrador</option>
              <option value="1">Entrenador</option>
              <option value="2">Socio</option>
              </select>
             
                 <label for="especialidad" class="form-label" v-if="entrenador">Elige la especialidad: </label>
-            <select name="especialidad" id="especialidad" class="form-control" v-if="entrenador" required value="<?=set_value('especialidad')?>">
+            <select name="especialidad" id="especialidad" class="form-select" v-if="entrenador" required value="<?=set_value('especialidad')?>">
                 <option value="fuerza">Fuerza</option>
                 <option value="hipertrofia">Hipertrofia</option>
                 <option value="resistencia">Resistencia</option>
@@ -70,7 +70,7 @@
             <label for="medicacionActual" class="form-label" v-if="socio">Medicación Actual:</label>
             <input type="textarea" name="medicacionActual" id="medicacionActual" class="form-control" placeholder="Escribe los medicamentos que alctualmente consumes" v-if="socio" required value="<?=set_value('medicacionActual')?>">
             
-            <input type="submit" class="btn btn-success" value="Agregar"> 
+            <input type="submit" class="btn btn-success margen" value="Agregar"> 
             
             </form>
         </div>

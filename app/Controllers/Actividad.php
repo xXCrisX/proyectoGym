@@ -96,10 +96,12 @@ class Actividad extends BaseController
              view('footer');
            }else{
             if(!$file->hasMoved()){
-                $route=ROOTPATH.('public/images');
-                $newFileName = 'actividad_' . "1". '.' . $file->getExtension();
+                $route=ROOTPATH.('public/images/actividad');
+                $idActividad=$ActividadM->getIdActividad();
+                $idActividad=$idActividad[0]->idActividad +1;
+                $newFileName = 'actividad_' . $idActividad. '.' . $file->getExtension();
                 $file->move($route,$newFileName);
-                    $data['foto']="images".$newFileName;
+                    $data['foto']="images/actividad/".$newFileName;
             }
             $ActividadM=model('ActividadModel');
             $ActividadM->insert($data);
@@ -126,8 +128,20 @@ class Actividad extends BaseController
     {
         $ActividadM=model('ActividadModel');
         $idActividad=$_POST['idActividad'];
+        
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];  
+        $file=$this->request->getFile('foto');
         $data=[
-        "foto"=>$_POST['foto'],
         "nombre"=>$_POST['nombre'],
         "fecha"=>$_POST['fecha'],
         "horaI"=>$_POST['horaI'],      
@@ -139,6 +153,14 @@ class Actividad extends BaseController
         "capacidad"=>$_POST['capacidad'],
         "idEntrenador"=>$_POST['idEntrenador']
         ];
+        if($file->isValid()){
+        if(!$file->hasMoved()){
+            $route=ROOTPATH.('public/images/actividad');
+            $newFileName = 'actividad_' . $idActividad. '.' . ".png";
+            $file->move($route,$newFileName,true);
+                $data['foto']="images/actividad/".$newFileName;
+        }
+    }
         $ActividadM->set($data)->where('idActividad',$idActividad)->update();
         return redirect ()->to(base_url('/actividad')) ;
     }

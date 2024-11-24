@@ -7,9 +7,9 @@
     </div>
 
 <div class="row justify-content-center">
-    <div class="col-auto table-responsive-sm" >
-        <table class='table table-dark text-center'>
-            <thead>
+    <div class="col-10 table-responsive-sm" >
+        <table class='table  text-center' style="margin-bottom: 100px;" >
+            <thead class="table-active" >
                 <th>Id dieta</th>
                 <th>Tempo de Comida</th>
                 <th>Objetivo</th> 

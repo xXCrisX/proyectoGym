@@ -8,8 +8,8 @@
 
 <div class="row justify-content-center">
     <div class="col-10 table-responsive-sm" >
-        <table class='table table-striped text-center'>
-            <thead>
+        <table class='table text-center' style="margin-bottom: 100px;">
+            <thead class="table-active">
                 <th>id Rutina asiganda</th>
                 <th>nombre Socio</th> 
                 <th>tipo rutina</th>      

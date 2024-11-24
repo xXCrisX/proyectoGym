@@ -9,8 +9,8 @@
 <div class="row justify-content-center">
     <div class="col-8 table-responsive-sm" >
     <?php //print_r($pago)?>
-        <table class='table table-dark text-center'>
-            <thead>
+        <table class='table  text-center' style="margin-bottom: 100px;">
+            <thead class="table-active">
                 <th>Id Pago</th>
                 <th>Monto</th> 
                 <th>Fecha Pago</th>

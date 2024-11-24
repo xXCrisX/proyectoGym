@@ -35,7 +35,7 @@
             <input type="text" name="correo" class="form-control" id="correo" required value="<?=$entrenador[0]->correo;?>">
 
             <label for="especialidad" class="form-label" >Elige la especialidad: </label>
-            <select name="especialidad" id="especialidad" class="form-control"  required value="<?=$entrenador[0]->especialidad;?>">
+            <select name="especialidad" id="especialidad" class="form-select"  required value="<?=$entrenador[0]->especialidad;?>">
                 <option value="fuerza">Fuerza</option>
                 <option value="hipertrofia">Hipertrofia</option>
                 <option value="resistencia">Resistencia</option>

@@ -7,14 +7,15 @@
     </div>
 
 <div class="row justify-content-center">
-    <div class="col-auto table-responsive-sm" >
-        <table class='table table-dark text-center'>
-            <thead>
+    <div class="col-10 table-responsive-sm">
+        <table class='table  text-center' style="margin-bottom: 100px;">
+            <thead class="table-active">
                 <th>Id Equipo</th>
                 <th>marca</th> 
                 <th>Cantidad</th>      
                 <th>Nombre</th>
                 <th>Estado del equipo</th>
+                <th></th>
                 <th></th>
             </thead>
             <tbody>
@@ -25,8 +26,8 @@
                         <td><?=$equipos->cantidad?></td>
                         <td><?=$equipos->nombre?></td>
                         <td><?=$equipos->estado?></td>
-                        <td><a href="<?= base_url('equipos/editar/'.$equipos->idEquipo);?>" class="btn btn-primary">Editar</a>
-                        <a href="<?= base_url('equipos/eliminar/'.$equipos->idEquipo);?>"class="btn btn-danger">Eliminar</a></td>
+                        <td><a href="<?= base_url('equipos/editar/'.$equipos->idEquipo);?>" class="btn btn-primary">Editar</a></td>
+                        <td><a href="<?= base_url('equipos/eliminar/'.$equipos->idEquipo);?>"class="btn btn-danger">Eliminar</a></td>
                     </tr>
                     <?php endforeach ?>
              </tbody>

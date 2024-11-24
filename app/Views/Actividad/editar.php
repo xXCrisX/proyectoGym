@@ -3,11 +3,11 @@
         <div class="col-8">
             <h2>Editar Actividad</h2>
            <?php //print_r ($actividad);?>    
-            <form action="<?= base_url('actividad/actualizar/'); ?>" method="POST">
+            <form action="<?= base_url('actividad/actualizar/'); ?>" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
             <input type="hidden" class="form-control" name="idActividad" id="idActividad" required value="<?=$actividad[0]->idActividad;?>">
             <label for="foto" class="form-label">foto</label>
-            <input type="file" class="form-control" name="foto" id="foto" required value="<?=$actividad[0]->foto;?>">
+            <input type="file" class="form-control" name="foto" id="foto" accept="image/png,image/jpg,image/jpeg" >
             <label for="nombre" class="form-label">Nombre de actividad</label>
             <input type="text" name="nombre" id="nombre" placeholder="Escribe un nombre para la actividad" class="form-control" required value="<?= $actividad[0]->nombre;?>">
             <label for="fecha" class="form-label">Fecha</label>

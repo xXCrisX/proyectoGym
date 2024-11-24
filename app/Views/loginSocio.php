@@ -1,4 +1,4 @@
-<div class="container " style=" ">
+<div class="container">
     <div class="row justify-content-end">
         <div class="col-6">
             <form action="<?=base_url('accederSocio')?>" method="POST">

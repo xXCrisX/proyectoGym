@@ -53,9 +53,16 @@ class ActividadModel extends Model
     public function verActividad()
     {
         $db=db_connect();
-        $sql="SELECT a.idActividad,a.nombre AS nombreAct,a.fecha,a.capacidad,u.nombre FROM actividad AS a
+        $sql="SELECT a.idActividad,a.nombre AS nombreAct,a.fecha,a.capacidad,u.nombre,a.foto FROM actividad AS a
               INNER JOIN entrenador AS e ON a.idEntrenador=e.idEntrenador
               INNER JOIN usuario AS u ON e.idUsuario=u.idUsuario";
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
+    public function getIdActividad()
+    {
+        $db=db_connect();
+        $sql="SELECT MAX(idActividad) AS idActividad FROM actividad";
         $query=$db->query($sql);
         return $query->getResult();
     }

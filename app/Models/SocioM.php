@@ -58,7 +58,8 @@ class SocioM extends Model
         $sql="SELECT s.idSocio,u.nombre,u.tipo,p.fechaFinPago FROM socio AS s
               INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario
               INNER JOIN pago AS p ON s.idSocio=p.idSocio
-              WHERE u.alias=" . "'" . $alias . "'"." AND u.cta=" . "'" . $cta. "'"."AND p.fechaFinPago>=" ."'".$anio."-".$mes."-".$dia.   "'";
+              WHERE u.alias=" . "'" . $alias . "'"." AND u.cta=" . "'" . $cta. "'"."AND p.idPago=(SELECT MAX(p2.idPago) FROM pago AS p2
+                                                                                                  WHERE p2.fechaFinPago >= '".$anio."-".$mes."-".$dia."' )";
         $query=$db->query($sql);
         return $query->getResult();
     }

@@ -7,9 +7,9 @@
     </div>
 
 <div class="row justify-content-center">
-    <div class="col-auto table-responsive-sm" >
-        <table class='table table-dark'>
-            <thead>
+    <div class="col-8 table-responsive-sm" >
+        <table class='table'>
+            <thead class="table-active" style="margin-bottom: 100px;" >
                 <th>Hora de entrada</th>
                 <th>Hora de salida</th> 
                 <th>Nombre de socio</th>      

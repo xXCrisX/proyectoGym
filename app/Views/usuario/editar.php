@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-6" >
+        <div class="col-6"  >
             <h2>Editar usuarios</h2>
            <?php //print_r ($usuario);?>    
-            <form action="<?= base_url('usuario/actualizar/'); ?>" method="POST">
+            <form action="<?= base_url('usuario/actualizar/'); ?>" method="POST" style="margin-bottom: 50px;">
           
             <input type="hidden" name="idUsuario" value="<?= $usuario[0]->idUsuario;?>">
             <label for="alias" class="form-label">Nombre de usuario</label>
@@ -32,7 +32,7 @@
             <label for="correo" class="form-label">Correo Electronico</label>
             <input type="text" name="correo" class="form-control" id="correo"required  value="<?=$usuario[0]->correo;?>">
     
-            <input type="submit" class="btn btn-primary" value="Actualizar">  
+            <input type="submit" class="btn btn-primary margen" value="Actualizar">  
             </form>
          
         </div>
