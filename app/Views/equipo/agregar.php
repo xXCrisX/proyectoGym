@@ -3,7 +3,7 @@
         <div class="col-auto">
             <h2>Agregar Equipo</h2>
             <?= validation_list_errors()?>
-            <form action="<?= base_url('equipos/insertar'); ?>" method="POST">
+            <form action="<?= base_url('equipos/insertar'); ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="<?= csrf_token() ?>" required value="<?= csrf_hash() ?>"> 
             <label for="marca" class="form-label">Marca</label>
             <input type="text" name="marca" class="form-control" id="marca" placeholder="marca" required value="<?= set_value('marca')?>">
@@ -16,7 +16,7 @@
             <input type="date" class="form-control" name="fechaAdq" id="fechaAdq" required value="<?=set_value('fechaAdq') ?>">
             
             <label for="foto" class="form-label">Foto</label>
-            <input type="file" name="foto" class="form-control" id="foto"  required value="<?= set_value('foto')?>">
+            <input type="file" name="foto" class="form-control" id="foto"  accept="image/png,image/jpg,image/jpeg"  required value="<?= set_value('foto')?>">
 
             <label for="estado" class="form-label">Estado del equipo</label>
             <select name="estado" id="estado" class="form-control"  required value="<?= set_value('estado')?>">

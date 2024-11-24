@@ -38,4 +38,12 @@ class RutinaM extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getIdRutina()
+    {
+        $db=db_connect();
+        $sql="SELECT MAX(idRutina) AS idRutina FROM Rutina";
+        $query=$db->query($sql);
+        return $query->getResult(); 
+    }
 }

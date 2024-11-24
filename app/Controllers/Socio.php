@@ -36,6 +36,11 @@ class Socio extends BaseController
     }
     public function insertar()
     {
+        $session=session();
+        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
+             return redirect()->to(base_url('/login'));
+        }
+        $data1 ['nombre']=$session->get('alias');
         if (!$this->request->is('post'))
         {
             $this->ver();
@@ -70,13 +75,12 @@ class Socio extends BaseController
         "telefonoC"=>$_POST['telefonoC'],
         "correo"=>$_POST['correo'],
         "padecimientos"=>$_POST['padecimientos']
-
         ];
 
            if(!$this->validate($rules)){
              return 
              view('head').
-             view('menu').
+             view('menu',$data1).
              view('socio/agregar',[
                 'validation'=> $this->validator
              ]).
@@ -109,6 +113,18 @@ class Socio extends BaseController
         $idSocio=$_POST['idSocio'];
         $usuarioM=model('UsuarioM');
         $idUsuario=$_POST['idUsuario'];
+        $file=$this->request->getFile('foto');
+        $validar=[
+            'foto'=>[
+                    'label'=>'imagen',
+                    'rules'=>[
+                        'is_image[foto]',
+                        'max_size[foto,500]',
+                        'max_dims[foto,2080,2000]',
+                        'ext_in[foto,png,jpg,jpeg]'
+                    ]
+                ]
+            ];
         $data=[
             "alias"=>$_POST['alias'],    
             "correo"=>$_POST['correo'],    
@@ -129,8 +145,15 @@ class Socio extends BaseController
             "lesionesPrevias"=>$_POST['lesionesPrevias'],
             "alergias"=>$_POST['alergias'],
             "medicacionActual"=>$_POST['medicacionActual'],
-            "foto"=>$_POST['foto'],
         ];
+        if($file->isValid()){
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/socio');
+                $newFileName = 'actividad_' . $idSocio.".png";
+                $file->move($route,$newFileName,true);
+                    $socio['foto']="images/socio/".$newFileName;
+            }
+        }
         $usuarioM->set($data)->where('idUsuario',$idUsuario)->update();
         $socioM->set($socio)->where('idSocio',$idSocio)->update();
         return redirect ()->to(base_url('/usuario')) ;

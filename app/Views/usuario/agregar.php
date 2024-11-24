@@ -3,7 +3,7 @@
         <div class="col-6">
             <h2>Agregar usuario</h2>
             <?= validation_list_errors()?>
-            <form action="<?= base_url('usuario/insertar'); ?>" method="POST">
+            <form action="<?= base_url('usuario/insertar'); ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
             <label for="alias" class="form-label">Nombre de usuario</label>
             <input type="text" name="alias" class="form-control" id="alias" placeholder="escri  be tu nombre de usuario"  required value="<?= set_value('alias')?>">    
@@ -49,14 +49,14 @@
                 <option value="perdidaPeso">Perdida de peso</option>
              </select>
             <label for="curp" class="form-label" v-if="entrenador" >Curp: </label>
-            <input type="text" name="curp" class="form-control" id="curp" placeholder="curp" v-if="entrenador"  required value="<?=set_value('curp')?>"> 
+            <input type="text" name="curp" class="form-control" id="curp" placeholder="curp" v-if="entrenador" accept="image/png,image/jpg,image/jpeg" required value="<?=set_value('curp')?>"> 
             <label for="foto" v-if="entrenador">Foto</label>
             <input type="file" name="foto" id="foto" v-if="entrenador" class="form-control" required value="<?=set_value('foto')?>">
             <label for="certificaciones" v-if="entrenador" class="form-label">Certificaciones:</label>
             <input type="textarea" name="certificaciones" id="certificaciones" v-if="entrenador" placeholder="Certificaciones" class="form-control" required value="<?=set_value('certificaciones')?>">
             
             <label for="foto" class="form-label" v-if="socio">Foto:</label>
-            <input type="file" name="foto" id="foto" class="form-control" v-if="socio" required value="<?=set_value('foto')?>">
+            <input type="file" name="foto" id="foto" class="form-control" v-if="socio" accept="image/png,image/jpg,image/jpeg" required value="<?=set_value('foto')?>">
             <label for="peso" class="form-label" v-if="socio">Peso:</label>
             <input type="text" name="peso" id="peso" class="form-control" placeholder="Escribe tu peso en kg" v-if="socio" required value="<?=set_value('peso')?>" >
             <label for="estatura" class="form-label" v-if="socio">Estatura:</label>

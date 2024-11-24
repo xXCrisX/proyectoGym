@@ -3,7 +3,7 @@
         <div class="col-6">
             <h2>Editar Dieta</h2>
            <?php //print_r ($usuario);?>    
-            <form action="<?= base_url('dietas/actualizar/'); ?>" method="POST"> 
+            <form action="<?= base_url('dietas/actualizar/'); ?>" method="POST" enctype="multipart/form-data"> 
             <input type="hidden" name="idDieta" value="<?= $dieta[0]->idDieta;?>">
             <label for="descripcion" class="form-label">Descripción:</label>
             <input type="text" name="descripcion" class="form-control" id="descripcion" placeholder="Escribe toda la información sobre la dieta"  required value="<?=$dieta[0]->descripcion;?>">
@@ -18,7 +18,7 @@
                 <option value="Mantenimiento"<?=$dieta[0]->objetivo=="Mantenimiento"?'selected':"";?>>Mantenimiento</option>
             </select>
             <label for="foto" class="form-label">Foto</label>
-            <input type="file" name="foto" class="form-control" id="foto" required value="<?= $dieta[0]->foto;?>">
+            <input type="file" name="foto" class="form-control" id="foto" accept="image/png,image/jpg,image/jpeg" >
             <label for="duracionSemanas" class="form-label">Duración de la dieta</label>
             <input type="text" class="form-control" name="duracionSemanas" id="duracionSemanas" placeholder="Escribe las semanas que durara esta dieta" required value="<?=$dieta[0]->duracionSemanas;?>">
             <label for="tiempoDeComida" class="form-label">Tiempo de comida al día</label>

@@ -11,6 +11,7 @@
         <table class='table text-center' style="margin-bottom: 100px;" >
             <thead class="table-active">
                 <th>Id Rutina</th>
+                <th>Foto</th>
                 <th>Tipo de Rutina</th> 
                 <th>Descripción</th>      
                 <th>Recomendaciones</th>
@@ -21,8 +22,8 @@
             <tbody>
                     <?php foreach($rutina AS $rutinas):?>    
                     <tr>
-                       
                         <td><?= $rutinas->idRutina?></td>
+                        <td><img src="<?=base_url($rutinas->foto);?>" alt="" style="width: 50%;"></td>
                         <td><?= $rutinas->tipoRutina?></td>
                         <td><?=$rutinas->descripcion?></td>
                         <td><?=$rutinas->recomendacion?></td>

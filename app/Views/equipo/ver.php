@@ -11,6 +11,7 @@
         <table class='table  text-center' style="margin-bottom: 100px;">
             <thead class="table-active">
                 <th>Id Equipo</th>
+                <th>Foto</th>
                 <th>marca</th> 
                 <th>Cantidad</th>      
                 <th>Nombre</th>
@@ -22,6 +23,7 @@
                     <?php foreach($equipo AS $equipos):?>    
                     <tr>
                         <td><?= $equipos->idEquipo?></td>
+                        <td><img src="<?=base_url($equipos->foto)?>" alt="" style="width: 50%;"></td>
                         <td><?= $equipos->marca?></td>
                         <td><?=$equipos->cantidad?></td>
                         <td><?=$equipos->nombre?></td>

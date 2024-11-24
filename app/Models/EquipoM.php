@@ -38,4 +38,12 @@ class EquipoM extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getIdEquipo()
+    {
+        $db=db_connect();
+        $sql="SELECT MAX(idEquipo) AS idEquipo FROM Equipo";
+        $query=$db->query($sql);
+        return $query->getResult(); 
+    }
 }

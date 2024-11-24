@@ -50,7 +50,6 @@ class Equipo extends BaseController
             'marca'=>'required',
             'cantidad'=>'required',
             'fechaAdq'=>'required',
-            'foto'=>'required',
             'nombre'=>'required',
             'estado'=>'required'
         ];
@@ -59,12 +58,22 @@ class Equipo extends BaseController
         "marca"=>$_POST['marca'],      
         "cantidad"=> $_POST['cantidad'],
         "fechaAdq"=> $_POST['fechaAdq'],
-        "foto"=> $_POST['foto'],
         "nombre"=> $_POST['nombre'],
         "estado"=>$_POST['estado']
         ];
-
-           if(!$this->validate($rules)){
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];
+        $file=$this->request->getFile('foto');
+           if(!$this->validate($rules) or !$this->validate($validar)){
              return 
              view('head').
              view('menu',$data1).
@@ -73,7 +82,14 @@ class Equipo extends BaseController
              ]).
              view('footer');
            }else{
-            $equipoM=model('EquipoM');
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/equipo');
+                $idEquipo=$equipoM->getIdEquipo();
+                $idEquipo=$idEquipo[0]->idEquipo +1;
+                $newFileName = 'equipo_' . $idEquipo. '.' . $file->getExtension();
+                $file->move($route,$newFileName);
+                    $data['foto']="images/equipo/".$newFileName;
+            }
             $equipoM->insert($data);
             return redirect()->to(base_url('/equipos'));    
            }
@@ -98,14 +114,33 @@ class Equipo extends BaseController
     {
         $equipoM=model('EquipoM');
         $idEquipo=$_POST['idEquipo'];
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];  
+        $file=$this->request->getFile('foto');
         $data=[
             "marca"=>$_POST['marca'],      
             "cantidad"=> $_POST['cantidad'],
             "fechaAdq"=> $_POST['fechaAdq'],
-            "foto"=> $_POST['foto'],
             "nombre"=> $_POST['nombre'],
             "estado"=>$_POST['estado']
         ];
+        if($file->isValid()){
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/equipo');
+                $newFileName = 'actividad_' . $idEquipo.".png";
+                $file->move($route,$newFileName,true);
+                    $data['foto']="images/equipo/".$newFileName;
+            }
+        }
         $equipoM->set($data)->where('idEquipo',$idEquipo)->update();
         return redirect ()->to(base_url('/equipos')) ;
     }

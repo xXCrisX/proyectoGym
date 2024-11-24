@@ -40,7 +40,7 @@ class Dieta extends BaseController
              return redirect()->to(base_url('/login'));
         }
         $data1 ['nombre']=$session->get('alias');
-
+        $dietaM=model('DietaM');
         if (!$this->request->is('post'))
         {
             $this->ver();
@@ -50,7 +50,6 @@ class Dieta extends BaseController
             'recomendacion'=>'required',
             'calorias'=>'required',
             'objetivo'=>'required',
-            'foto'=>'required',
             'duracionSemanas'=>'required',
             'tiempoDeComida'=>'required'
         ];
@@ -60,12 +59,22 @@ class Dieta extends BaseController
         "recomendacion"=> $_POST['recomendacion'],
         "calorias"=> $_POST['calorias'],
         "objetivo"=> $_POST['objetivo'],
-        "foto"=>$_POST['foto'],
         "duracionSemanas"=>$_POST['duracionSemanas'],
         "tiempoDeComida"=>$_POST['tiempoDeComida']
         ];
-
-           if(!$this->validate($rules)){
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];
+        $file=$this->request->getFile('foto');
+           if(!$this->validate($rules) or !$this->validate($validar)){
              return 
              view('head').
              view('menu',$data1).
@@ -74,7 +83,14 @@ class Dieta extends BaseController
              ]).
              view('footer');
            }else{
-            $dietaM=model('DietaM');
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/dieta');
+                $idDieta=$dietaM->getidDieta();
+                $idDieta=$idDieta[0]->idDieta +1;
+                $newFileName = 'dieta_' . $idDieta. '.' . $file->getExtension();
+                $file->move($route,$newFileName);
+                    $data['foto']="images/dieta/".$newFileName;
+            }
             $dietaM->insert($data);
             return redirect()->to(base_url('/dietas'));    
            }
@@ -99,15 +115,34 @@ class Dieta extends BaseController
     {
         $dietaM=model('DietaM');
         $idDieta=$_POST['idDieta'];
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];  
+        $file=$this->request->getFile('foto');
         $data=[
             "descripcion"=>$_POST['descripcion'],      
             "recomendacion"=> $_POST['recomendacion'],
             "calorias"=> $_POST['calorias'],
             "objetivo"=> $_POST['objetivo'],
-            "foto"=>$_POST['foto'],
             "duracionSemanas"=>$_POST['duracionSemanas'],
             "tiempoDeComida"=>$_POST['tiempoDeComida']
         ];
+        if($file->isValid()){
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/dieta');
+                $newFileName = 'dieta_' . $idDieta.".png";
+                $file->move($route,$newFileName,true);
+                    $data['foto']="images/dieta/".$newFileName;
+            }
+        }
         $dietaM->set($data)->where('idDieta',$idDieta)->update();
         return redirect ()->to(base_url('/dietas')) ;
     }

@@ -58,4 +58,12 @@ class EntrenadorModel extends Model
         $query=$db->query($sql);
         return $query->getResult();
     }
+
+    public function getIdEntrenador()
+    {
+        $db=db_connect();
+        $sql="SELECT MAX(idEntrenador) AS idEntrenador FROM Entrenador";
+        $query=$db->query($sql);
+        return $query->getResult(); 
+    }
 }

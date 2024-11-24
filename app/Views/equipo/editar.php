@@ -3,7 +3,7 @@
         <div class="col-auto">
             <h2>Editar Equipo</h2>
            <?php //print_r ($usuario);?>    
-            <form action="<?= base_url('equipos/actualizar/'); ?>" method="POST">
+            <form action="<?= base_url('equipos/actualizar/'); ?>" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="idEquipo" value="<?= $equipo[0]->idEquipo;?>">
             <label for="marca" class="form-label">Marca</label>
             <input type="text" name="marca" class="form-control" id="marca" placeholder="marca" required value="<?=$equipo[0]->marca;?>">
@@ -13,8 +13,8 @@
             <input type="text" name="cantidad" class="form-control" id="cantidad" placeholder="cantidad"  required value="<?= $equipo[0]->cantidad;?>">
             <label for="fechaAdq" class="form-label">Fecha de Adquisición: </label>
             <input type="date" class="form-control" name="fechaAdq" id="fechaAdq" required value="<?=$equipo[0]->fechaAdq;?>">
-            <label for="foto" class="form-label">Fotografía: </label>
-            <input type="file" name="foto" class="form-control" id="foto" required value="<?= $equipo[0]->foto;?>">
+            <label for="foto" class="form-label">Foto: </label>
+            <input type="file" name="foto" class="form-control" id="foto" accept="image/png,image/jpg,image/jpeg">
             <label for="estado" class="form-label">Estado del Equipo</label>
             <select name="estado" id="estado" class="form-control" required >
                 <option value="mantenimiento"<?=$equipo[0]->estado=="matenimiento"? "selected":"";?>>mantenimiento</option>

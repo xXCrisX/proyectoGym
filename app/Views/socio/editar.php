@@ -2,9 +2,8 @@
     <div class="row justify-content-center">
         <div class="col-6">
             <h2>Editar usuario</h2>
-           <?php print_r ($usuario);?>    
-            <form action="<?= base_url('socio/actualizar/'); ?>" method="POST">
-            
+           <?php //print_r ($usuario);?>    
+            <form action="<?= base_url('socio/actualizar/'); ?>" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="idSocio" value="<?= $socio[0]->idSocio;?>">
             <input type="hidden" name="idUsuario" value="<?=$usuario[0]->idUsuario;?>">
             <label for="alias" class="form-label">Nombre de usuario</label>
@@ -38,7 +37,7 @@
             <input type="text" name="correo" class="form-control" id="correo" value="<?=$usuario[0]->correo;?>">
 
             <label for="foto" class="form-label">Foto:</label>
-            <input type="file" class="form-control" name="foto" id="foto" value="<?=$socio[0]->foto;?>">
+            <input type="file" class="form-control" name="foto" id="foto" accept="image/png,image/jpg,image/jpeg" value="<?=$socio[0]->foto;?>">
             <label for="peso" class="form-label">Peso</label>
             <input type="text" class="form-control" name="peso" id="peso"value="<?=$socio[0]->peso;?>">
             <label for="estatura" class="form-label">Estatura</label>

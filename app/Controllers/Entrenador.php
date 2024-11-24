@@ -24,6 +24,18 @@ class Entrenador extends BaseController
         $entrenadorM=model('EntrenadorModel');
         $usuarioM=model('UsuarioM');
         $idUsuario=$_POST['idUsuario'];
+        $file=$this->request->getFile('foto');
+        $validar=[
+            'foto'=>[
+                    'label'=>'imagen',
+                    'rules'=>[
+                        'is_image[foto]',
+                        'max_size[foto,500]',
+                        'max_dims[foto,2080,2000]',
+                        'ext_in[foto,png,jpg,jpeg]'
+                    ]
+                ]
+            ];
         $usuario=[
             "alias"=>$_POST['alias'],      
             "nombre"=> $_POST['nombre'],
@@ -39,9 +51,16 @@ class Entrenador extends BaseController
             $entrenador=[
                 "especialidad"=>$_POST['especialidad'],
                 "curp"=>$_POST['curp'],
-                "foto"=>$_POST['foto'],
                 "certificaciones"=>$_POST['certificaciones'],
             ];
+            if($file->isValid()){
+                if(!$file->hasMoved()){
+                    $route=ROOTPATH.('public/images/entrenador');
+                    $newFileName = 'actividad_' . $idEntrenador.".png";
+                    $file->move($route,$newFileName,true);
+                        $entrenador['foto']="images/entrenador/".$newFileName;
+                }
+            }
             $usuarioM->set($usuario)->where('idUsuario',$idUsuario)->update();
             $entrenadorM->set($entrenador)->where('idEntrenador',$idEntrenador)->update();
             return redirect()->to(base_url('usuario'));

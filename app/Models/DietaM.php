@@ -38,4 +38,12 @@ class DietaM extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getIdDieta()
+    {
+        $db=db_connect();
+        $sql="SELECT MAX(idDieta) AS idDieta FROM Dieta";
+        $query=$db->query($sql);
+        return $query->getResult(); 
+    }
 }

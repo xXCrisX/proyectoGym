@@ -11,6 +11,7 @@
         <table class='table  text-center' style="margin-bottom: 100px;" >
             <thead class="table-active" >
                 <th>Id dieta</th>
+                <th>Foto</th>
                 <th>Tempo de Comida</th>
                 <th>Objetivo</th> 
                 <th>calorias</th>
@@ -21,6 +22,7 @@
                     <?php foreach($dieta AS $dietas):?>    
                     <tr>
                         <td><?= $dietas->idDieta?></td>
+                        <td><img src="<?=base_url($dietas->foto)?>" alt="" style="width: 50%;"></td>
                         <td><?=$dietas->tiempoDeComida;?></td>
                         <td><?= $dietas->objetivo?></td>
                         <td><?=$dietas->calorias?></td>

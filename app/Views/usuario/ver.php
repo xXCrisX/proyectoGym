@@ -48,6 +48,7 @@
         <table class="table  ">
             <thead class="table-active">
                 <th >Id Entrenador</th>
+                <th>Foto</th>
                 <th>Nombre(s)</th> 
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
@@ -58,6 +59,7 @@
                 <?php foreach($entrenador as $key):?>
                 <tr>
                     <td><?=$key->idEntrenador?></td>
+                    <td><img src="<?=base_url($key->foto);?>" alt="" style="width: 50%;"></td>
                     <td><?=$key->nombre?></td>
                     <td><?=$key->apellidoP?></td>
                     <td><?=$key->apellidoM?></td>
@@ -75,6 +77,7 @@
         <table class="table ">
             <thead class="table-active">
                 <th >Id socio</th>
+                <th>Foto</th>
                 <th>Nombre(s)</th> 
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
@@ -85,6 +88,7 @@
                 <?php foreach($socio as $key):?>
                 <tr>
                     <td><?=$key->idSocio?></td>
+                    <td><img src="<?=base_url($key->foto);?>" alt="" style="width: 50%;"></td>
                     <td><?=$key->nombre?></td>
                     <td><?=$key->apellidoP?></td>
                     <td><?=$key->apellidoM?></td>

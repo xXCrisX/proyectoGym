@@ -7,7 +7,7 @@
             <input type="text" class="form-control" name="alias" id="alias"placeholder="Usuario"  required>
             <label for="cta" class="form-label" >Contraseña: </label>
             <input type="password" class="form-control" name="cta" id="cta" placeholder="Contraseña" required>
-            <div class="text-center" >
+            <div class="text-center">
             <input type="submit" class="btn btn-success margen" value="Iniciar sesión">
             </div>
             </form>

@@ -2,7 +2,7 @@
         <div class="col-6">
             <h2>Agregar Rutina</h2>
             <?= validation_list_errors()?>
-            <form action="<?= base_url('rutinas/insertar'); ?>" method="POST">
+            <form action="<?= base_url('rutinas/insertar'); ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">            
             <label for="tipoRutina" class="form-label">Tipo de Rutina</label>
             <input type="text" name="tipoRutina" class="form-control" id="tipoRutina" placeholder="Tipo de rutina" required value="<?= set_value('tipoRutina')?>">
@@ -39,7 +39,7 @@
             <label for="duracionSemanas" class="form-label">Duración de semanas de esta rutina</label>
             <input type="text" class="form-control" name="duracionSemanas" id="duracionSemanas" placeholder="Escribe el número de semanas que durara la rutina" required value="<?=set_value('duracionSemanas');?>">
             <label for="foto" class="form-label">Foto</label>
-            <input type="file" class="form-control" name="foto" id="foto"  required value="<?=set_value('foto');?>">
+            <input type="file" class="form-control" name="foto" id="foto" accept="image/png,image/jpg,image/jpeg" required value="<?=set_value('foto');?>">
             <input type="submit" class="btn btn-success margen" value="Agregar">   
             </form>
         </div>

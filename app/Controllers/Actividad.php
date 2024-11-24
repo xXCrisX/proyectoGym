@@ -156,7 +156,7 @@ class Actividad extends BaseController
         if($file->isValid()){
         if(!$file->hasMoved()){
             $route=ROOTPATH.('public/images/actividad');
-            $newFileName = 'actividad_' . $idActividad. '.' . ".png";
+            $newFileName = 'actividad_' . $idActividad.".png";
             $file->move($route,$newFileName,true);
                 $data['foto']="images/actividad/".$newFileName;
         }
@@ -169,6 +169,7 @@ class Actividad extends BaseController
         $ActividadM=model('ActividadModel');
         $ActividadM->delete($idactividad);
         return redirect()->to(base_url('/actividad'));
+
 
     }
 }

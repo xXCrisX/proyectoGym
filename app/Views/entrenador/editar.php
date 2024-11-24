@@ -3,7 +3,7 @@
         <div class="col-6">
             <h2>Editar Entrenador</h2>
             <?php //print_r($entrenador);?>
-            <form action="<?=base_url('entrenador/actualizar');?>" method="POST">    
+            <form action="<?=base_url('entrenador/actualizar');?>" method="POST" enctype="multipart/form-data">    
             <input type="hidden" name="idEntrenador" value="<?= $entrenador[0]->idEntrenador;?>">
             <input type="hidden" name="idUsuario" value="<?= $entrenador[0]->idUsuario;?>">
             <label for="alias" class="form-label">Nombre de usuario</label>
@@ -44,7 +44,7 @@
             <label for="curp" class="form-label"  >Curp: </label>
             <input type="text" name="curp" class="form-control" id="curp" placeholder="curp"   required value="<?=$entrenador[0]->curp;?>"> 
             <label for="foto" >Foto</label>
-            <input type="file" name="foto" id="foto"  class="form-control" required value="<?=$entrenador[0]->foto;?>">
+            <input type="file" name="foto" id="foto"  class="form-control" accept="image/png,image/jpg,image/jpeg" >
             <label for="certificaciones"  class="form-label">Certificaciones:</label>
             <input type="textarea" name="certificaciones" id="certificaciones"  placeholder="Certificaciones" class="form-control" required value="<?=$entrenador[0]->certificaciones;?>">
             <div class="text-center">

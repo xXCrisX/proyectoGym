@@ -25,7 +25,7 @@
                     <tr>
                        
                         <td><?= $actividades->idActividad?></td>
-                        <td><img src="<?=base_url($actividades->foto);?>" alt="<?=$actividades->foto?>" style="width: 30%;"></td>
+                        <td><img src="<?=base_url($actividades->foto);?>" alt="" style="width: 30%;"></td>
                         <td><?=$actividades->nombre;?></td>
                         <td><?=$actividades->fecha;?></td>
                         <td><?=$actividades->capacidad;?></td>

@@ -39,7 +39,7 @@ class Rutina extends BaseController
              return redirect()->to(base_url('/login'));
         }
         $data1 ['nombre']=$session->get('alias');
-
+        $rutinaM=model('RutinaM');
         if (!$this->request->is('post'))
         {
             $this->ver();
@@ -51,7 +51,6 @@ class Rutina extends BaseController
             'nivelDificultad'=>'required',
             'objetivo'=>'required',
             'duracionSemanas'=>'required',
-            'foto'=>'required',
             'dia'=>'required'
         ];
         
@@ -62,20 +61,37 @@ class Rutina extends BaseController
         "nivelDificultad"=>$_POST['nivelDificultad'],
         "objetivo"=>$_POST['objetivo'],
         "duracionSemanas"=>$_POST['duracionSemanas'],
-        "foto"=>$_POST['foto'],
         "dia"=>$_POST['dia']
         ];
-
-           if(!$this->validate($rules)){
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];
+        $file=$this->request->getFile('foto');
+           if(!$this->validate($rules) or !$this->validate($validar)){
              return 
              view('head').
-             view('menu').
+             view('menu',$data1).
              view('rutina/agregar',[
                 'validation'=> $this->validator
              ]).
              view('footer');
            }else{
-            $rutinaM=model('RutinaM');
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/rutina');
+                $idRutina=$rutinaM->getidRutina();
+                $idRutina=$idRutina[0]->idRutina +1;
+                $newFileName = 'rutina_' . $idRutina. '.' . $file->getExtension();
+                $file->move($route,$newFileName);
+                    $data['foto']="images/rutina/".$newFileName;
+            }
             $rutinaM->insert($data);
             return redirect()->to(base_url('/rutinas'));    
            }
@@ -100,6 +116,18 @@ class Rutina extends BaseController
     {
         $rutinaM=model('RutinaM');
         $idRutina=$_POST['idRutina'];
+        $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,200]',
+                    'max_dims[foto,1080,1920]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];  
+        $file=$this->request->getFile('foto');
         $data=[
             "tipoRutina"=>$_POST['tipoRutina'],      
             "descripcion"=> $_POST['descripcion'],
@@ -107,9 +135,16 @@ class Rutina extends BaseController
             "nivelDificultad"=>$_POST['nivelDificultad'],
             "objetivo"=>$_POST['objetivo'],
             "duracionSemanas"=>$_POST['duracionSemanas'],
-            "foto"=>$_POST['foto'],
             "dia"=>$_POST['dia']
         ];
+        if($file->isValid()){
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/rutina');
+                $newFileName = 'actividad_' . $idRutina.".png";
+                $file->move($route,$newFileName,true);
+                    $data['foto']="images/rutina/".$newFileName;
+            }
+        }
         $rutinaM->set($data)->where('idRutina',$idRutina)->update();
         return redirect ()->to(base_url('/rutinas')) ;
     }

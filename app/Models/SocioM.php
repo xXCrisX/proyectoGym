@@ -73,4 +73,11 @@ class SocioM extends Model
         $query=$db->query($sql);
         return $query->getResult();
     }
+    public function getIdSocio()
+    {
+        $db=db_connect();
+        $sql="SELECT MAX(idSocio) AS idSocio FROM Socio";
+        $query=$db->query($sql);
+        return $query->getResult(); 
+    }
 }

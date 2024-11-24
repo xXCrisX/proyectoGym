@@ -42,12 +42,15 @@ class Usuario extends BaseController
 
     public function insertar()
     {
-
+        $session=session();
+        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
+             return redirect()->to(base_url('/login'));
+        }
+        $data1 ['nombre']=$session->get('alias');
         if (!$this->request->is('post'))
         {
             $this->ver();
         }
-       
         $rules=[
             'alias'=>'required',
             'nombre'=>'required',
@@ -79,7 +82,7 @@ class Usuario extends BaseController
            if(!$this->validate($rules)){
              return 
              view('head').
-             view('menu').
+             view('menu',$data1).
              view('usuario/agregar',[
                 'validation'=> $this->validator
              ]).
@@ -93,23 +96,41 @@ class Usuario extends BaseController
                 $rulesE=[
                     "especialidad"=>"required",
                     "curp"=>"required",
-                    "foto"=>"required",
-                    "certificaciones"=>"required",
+                    "certificaciones"=>"required"
                 ];
            $entrenador=[
                "especialidad"=>$_POST['especialidad'],
                "curp"=>$_POST['curp'],
-               "foto"=>$_POST['foto'],
                "certificaciones"=>$_POST['certificaciones'],
                "idUsuario"=>$idUsuario
            ];
-           if(!$this->validate($rulesE)){
+           $validar=[
+            'foto'=>[
+                'label'=>'imagen',
+                'rules'=>[
+                    'is_image[foto]',
+                    'max_size[foto,500]',
+                    'max_dims[foto,2080,2000]',
+                    'ext_in[foto,png,jpg,jpeg]'
+                ]
+            ]
+        ];
+        $file=$this->request->getFile('foto');
+           if(!$this->validate($rulesE) or !$this->validate($validar)){
             return view('head').
-                   view('menu').
+                   view('menu',$data1).
                    view('usuario/agregar',['validation'=>$this->validator]).
                    view('footer');
            }else{
-           $entrenadorM=model('EntrenadorModel');
+            $entrenadorM=model('EntrenadorModel');
+            if(!$file->hasMoved()){
+                $route=ROOTPATH.('public/images/entrenador');
+                $idEntrenador=$entrenadorM->getIdEntrenador();
+                $idEntrenador=$idEntrenador[0]->idEntrenador +1;
+                $newFileName = 'entrenador_' . $idEntrenador. '.' . $file->getExtension();
+                $file->move($route,$newFileName);
+                    $entrenador['foto']="images/entrenador/".$newFileName;
+            }
            $entrenadorM->insert($entrenador);
         }  
         } 
@@ -121,7 +142,6 @@ class Usuario extends BaseController
                 "lesionesPrevias"=>"required",
                 "alergias"=>"required",
                 "medicacionActual"=>"required",
-                "foto"=>"required",
             ];
             $socio=[
                 "peso"=>$_POST['peso'],
@@ -130,18 +150,41 @@ class Usuario extends BaseController
                 "lesionesPrevias"=>$_POST['lesionesPrevias'],
                 "alergias"=>$_POST['alergias'],
                 "medicacionActual"=>$_POST['medicacionActual'],
-                "foto"=>$_POST['foto'],
                 "idUsuario"=>$idUsuario
             ];
-            $socioM=model('socioM');
+            $validar=[
+                'foto'=>[
+                    'label'=>'imagen',
+                    'rules'=>[
+                        'is_image[foto]',
+                        'max_size[foto,500]',
+                        'max_dims[foto,2080,2000]',
+                        'ext_in[foto,png,jpg,jpeg]'
+                    ]
+                ]
+            ];
+            $file=$this->request->getFile('foto');
+            if(!$this->validate($rulesS) or !$this->validate($validar)){
+                return view('head').
+                       view('menu',$data1).
+                       view('usuario/agregar',['validation'=>$this->validator]).
+                       view('footer');
+               }else{$socioM=model('SocioM');
+                if(!$file->hasMoved()){
+                    $route=ROOTPATH.('public/images/socio');
+                    $idSocio=$socioM->getidSocio();
+                    $idSocio=$idSocio[0]->idSocio +1;
+                    $newFileName = 'socio_' . $idSocio. '.' . $file->getExtension();
+                    $file->move($route,$newFileName);
+                        $socio['foto']="images/socio/".$newFileName;
+                }
+               }
             $socioM->insert($socio);
-        }        
+      }        
             return redirect()->to(base_url('/usuario'));
-           }
-            
-           
-        
+     }  
     }
+
     public function editar($idUsuario)
     {
         $session=session();

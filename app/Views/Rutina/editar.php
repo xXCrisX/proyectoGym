@@ -3,7 +3,7 @@
         <div class="col-6">
             <h2>Editar Rutina</h2>
            <?php //print_r ($rutina);?>    
-            <form action="<?= base_url('rutinas/actualizar/'); ?>" method="POST">
+            <form action="<?= base_url('rutinas/actualizar/'); ?>" method="POST" enctype="multipart/form-data">
             
             <input type="hidden" name="idRutina" value="<?= $rutina[0]->idRutina;?>">
             <label for="tipoRutina" class="form-label">Tipo de Rutina</label>
@@ -38,7 +38,7 @@
             <label for="duracionSemanas" class="form-label">Duración de semanas de esta rutina</label>
             <input type="text" class="form-control" name="duracionSemanas" id="duracionSemanas" placeholder="Escribe el número de semanas que durara la rutina" required value="<?=$rutina[0]->duracionSemanas?>">
             <label for="foto" class="form-label">Foto</label>
-            <input type="file" class="form-control" name="foto" id="foto"  required value="<?=$rutina[0]->foto;?>">
+            <input type="file" class="form-control" name="foto" id="foto"  accept="image/png,image/jpg,image/jpeg" >
             <input type="submit" class="btn btn-primary" value="Actualizar">   
             </form>
          
