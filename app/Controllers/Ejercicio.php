@@ -14,7 +14,7 @@ class Ejercicio extends BaseController
         $ejercicioM=model('EjercicioModel');
         $data['equipo']=$ejercicioM->selectEquipo();
         $data['ejercicio']=$ejercicioM->verEjercicio();
-
+        $data['eq']=$ejercicioM->asignarEquipo();
         $data[]=$ejercicioM->verEquipo;
         return view('head').
                view('menu',$alias).

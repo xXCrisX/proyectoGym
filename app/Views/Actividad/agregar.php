@@ -12,9 +12,9 @@
             <label for="fecha" class="form-label">Fecha</label>
             <input type="date" class="form-control" name="fecha" id="fecha" placeholder="Fecha de la actividad" required value="<?=set_value('fecha');?>">
             <label for="horaI" class="form-label">Hora Inicio</label>
-            <input type="time" name="horaI" class="form-control" id="horaI"  required value="<?= set_value('horaI')?>">
+            <input type="time" name="horaI" class="form-control" id="horaI" required value="<?= set_value('horaI')?>">
             <label for="horaF" class="form-label">Hora Finalizacion</label>
-            <input type="time" name="horaF" class="form-control" id="horaF"   required value="<?= set_value('horaF')?>">    
+            <input type="time" name="horaF" class="form-control" id="horaF" required value="<?= set_value('horaF')?>">    
             <label for="tipoEn" class="form-label">Tipo De entrenamiento : </label>
             <input type="text" name="tipoAct" class="form-control" id="tipoAct" placeholder="Tipo de actividad"  required value="<?= set_value('tipoAct')?>">
             <label for="descripcion" class="form-label">Descripción</label>

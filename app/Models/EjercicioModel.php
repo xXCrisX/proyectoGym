@@ -58,10 +58,10 @@ class EjercicioModel extends Model
     public function verEjercicio()
     {
         $db=db_connect();
-        $sql='SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia,ep.nombre AS nombreEquipo FROM EjercicioEquipo AS eq
+        $sql='SELECT e.idEjercicio,e.nombre,e.grupoMuscular,r.tipoRutina,r.dia FROM EjercicioEquipo AS eq
               RIGHT JOIN ejercicio AS e ON e.idEjercicio=eq.idEjercicio
               INNER JOIN rutina AS r ON e.idRutina=r.idRutina
-              LEFT JOIN equipo AS ep ON eq.idEquipo=ep.idEquipo';
+              GROUP BY e.idEjercicio';
         $query=$db->query($sql);
         return $query->getResult();
     }
@@ -74,5 +74,16 @@ class EjercicioModel extends Model
         $query=$db->query($sql);
         return $query->getResult();
     }
+
+    public function asignarEquipo()
+    {
+        $db=db_connect();
+        $sql='SELECT eq.idEjercicio,e.idEquipo, e.nombre FROM ejercicioEquipo AS eq
+              INNER JOIN equipo AS e ON eq.idEquipo=e.idEquipo
+              ORDER BY eq.idEjercicio ASC';
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
+    
 
 }

@@ -1,7 +1,14 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-6">
+            <?php $sesion=session();
+                  if($sesion->get('idUsuario')==$entrenador[0]->idUsuario):?>
+                  <h2>Editar Perfil</h2>
+                  <?php endif?>
+            <?php $sesion=session();
+                  if($sesion->get('idUsuario')!=$entrenador[0]->idUsuario):?>      
             <h2>Editar Entrenador</h2>
+            <?php endif?>
             <?php //print_r($entrenador);?>
             <form action="<?=base_url('entrenador/actualizar');?>" method="POST" enctype="multipart/form-data">    
             <input type="hidden" name="idEntrenador" value="<?= $entrenador[0]->idEntrenador;?>">
@@ -14,8 +21,6 @@
             <input type="text" name="apellidoP" class="form-control" id="apellidoP" required value="<?= $entrenador[0]->apellidoP;?>">
             <label for="apellidoM" class="form-label">Apellido Materno</label>
             <input type="text" name="apellidoM" class="form-control" id="apelldioM" required value="<?=$entrenador[0]->apellidoM;?>">
-            <label for="curp" class="form-label">curp: </label>
-            <input type="text" name="curp" class="form-control" id="curp" value="<?=$entrenador[0]->curp;?>">
             <label for="cta" class="form-label">Contraseña</label>
             <input type="password" name="cta" class="form-control" id="cta" placeholder="Contraseña" required value="<?= $entrenador[0]->cta;?>">
             <p>selecciona tu sexo:</p>

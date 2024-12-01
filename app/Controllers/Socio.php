@@ -171,9 +171,9 @@ class Socio extends BaseController
 
     public function loginSocio()
     {
-        return view('head').
+        return view('/pagina/head').
                view('loginSocio').
-               view('footer');
+               view('/pagina/footer');
     }
 
     public function accederSocio()
@@ -183,21 +183,27 @@ class Socio extends BaseController
         $alias=$_POST['alias'];
         $session=session();
         $result=$socioM->validarSocio($alias,$cta);
+        
         if(count($result)>0){
+            $fecha= $result[0]->fechaFinPago;
+            date_default_timezone_set('America/Mexico_City'); 
+            $fechaActual=date("Y-m-d");
+            $fechafinPago=date($fecha);
+            if($fechafinPago >=$fechaActual){ 
             $newData=[
                 "idSocio"=>$result[0]->idSocio,
                 "nombre"=>$result[0]->nombre,
                 "tipo"=>$result[0]->tipo,
                 "logged_in"=>true,
-                "fechaFinPago"=>$result[0]->fechaFinPago
+                "foto"=>$result[0]->foto,
             ];
             $session->set($newData);
-            return view('head').
-                   view('/socio/prueba');
+            return redirect()->to(base_url('inicio'));
         }else{
-            return view('head').
-                   view('loginSocio').
-                   view('footer');
+            return redirect()->to(base_url('loginSocio'));
+        }
+        }else{
+            return redirect()->to(base_url('loginSocio'));
         }
     }
 

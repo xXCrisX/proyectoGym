@@ -77,7 +77,6 @@ class Usuario extends BaseController
         "telefonoC"=>$_POST['telefonoC'],
         "correo"=>$_POST['correo'],
         ];
-
         
            if(!$this->validate($rules)){
              return 
@@ -88,22 +87,19 @@ class Usuario extends BaseController
              ]).
              view('footer');
            }else{
-            $usuarioM=model('UsuarioM');
-            $usuarioM->insert($usuario);
-            $idUsuario=$usuarioM->getInsertID();
             $tipoUsuario=$_POST['tipo'];
+            if($tipoUsuario==0){
+                $usuarioM=model('UsuarioM');
+                $usuarioM->insert($usuario);
+                $idUsuario=$usuarioM->getInsertID();
+            }
             if($tipoUsuario==1){
                 $rulesE=[
                     "especialidad"=>"required",
                     "curp"=>"required",
                     "certificaciones"=>"required"
                 ];
-           $entrenador=[
-               "especialidad"=>$_POST['especialidad'],
-               "curp"=>$_POST['curp'],
-               "certificaciones"=>$_POST['certificaciones'],
-               "idUsuario"=>$idUsuario
-           ];
+        
            $validar=[
             'foto'=>[
                 'label'=>'imagen',
@@ -122,7 +118,16 @@ class Usuario extends BaseController
                    view('usuario/agregar',['validation'=>$this->validator]).
                    view('footer');
            }else{
+            $usuarioM=model('UsuarioM');
+            $usuarioM->insert($usuario);
+            $idUsuario=$usuarioM->getInsertID();
             $entrenadorM=model('EntrenadorModel');
+            $entrenador=[
+                "especialidad"=>$_POST['especialidad'],
+                "curp"=>$_POST['curp'],
+                "certificaciones"=>$_POST['certificaciones'],
+                "idUsuario"=>$idUsuario
+            ];
             if(!$file->hasMoved()){
                 $route=ROOTPATH.('public/images/entrenador');
                 $idEntrenador=$entrenadorM->getIdEntrenador();
@@ -143,15 +148,6 @@ class Usuario extends BaseController
                 "alergias"=>"required",
                 "medicacionActual"=>"required",
             ];
-            $socio=[
-                "peso"=>$_POST['peso'],
-                "estatura"=>$_POST['estatura'],
-                "condicionMedicas"=>$_POST['condicionMedicas'],
-                "lesionesPrevias"=>$_POST['lesionesPrevias'],
-                "alergias"=>$_POST['alergias'],
-                "medicacionActual"=>$_POST['medicacionActual'],
-                "idUsuario"=>$idUsuario
-            ];
             $validar=[
                 'foto'=>[
                     'label'=>'imagen',
@@ -169,7 +165,20 @@ class Usuario extends BaseController
                        view('menu',$data1).
                        view('usuario/agregar',['validation'=>$this->validator]).
                        view('footer');
-               }else{$socioM=model('SocioM');
+               }else{
+                $usuarioM=model('UsuarioM');
+                $usuarioM->insert($usuario);
+                $idUsuario=$usuarioM->getInsertID();
+                $socioM=model('SocioM');
+                $socio=[
+                    "peso"=>$_POST['peso'],
+                    "estatura"=>$_POST['estatura'],
+                    "condicionMedicas"=>$_POST['condicionMedicas'],
+                    "lesionesPrevias"=>$_POST['lesionesPrevias'],
+                    "alergias"=>$_POST['alergias'],
+                    "medicacionActual"=>$_POST['medicacionActual'],
+                    "idUsuario"=>$idUsuario
+                ];
                 if(!$file->hasMoved()){
                     $route=ROOTPATH.('public/images/socio');
                     $idSocio=$socioM->getidSocio();
@@ -201,6 +210,10 @@ class Usuario extends BaseController
     }
     public function actualizar()
     {
+        $session=session();
+        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
+             return redirect()->to(base_url('/login'));
+        }
         $usuario=model('UsuarioM');
         $idUsuario=$_POST['idUsuario'];
         $data=[
@@ -217,6 +230,9 @@ class Usuario extends BaseController
             "correo"=>$_POST['correo'],
         ];
         $usuario->set($data)->where('idUsuario',$idUsuario)->update();
+        if($session->get('idUsuario')==$idUsuario){
+            return redirect ()->to(base_url('/inicio/admin')) ;
+        }
         return redirect ()->to(base_url('/usuario')) ;
     }
     public function eliminar($idUsuario)
@@ -243,7 +259,6 @@ class Usuario extends BaseController
 
          $result=$usuarioM->validar($alias,$cta );
          if(count($result)>0){
-
             $newdata=[
                 'alias'=>$result[0]->alias,
                 'tipo'=>$result[0]->tipo,
@@ -251,7 +266,11 @@ class Usuario extends BaseController
                 'idUsuario'=>$result[0]->idUsuario
             ];
             $session->set($newdata);
-            return redirect()->to(base_url('/inicio'));
+            if($session->get('tipo')==0){
+            return redirect()->to(base_url('/inicio/admin'));
+            }else if($session->get('tipo')==1){
+             return redirect()->to(base_url('/inicio/entrenador'));
+            }
          }
          else{
             $session->destroy();
@@ -266,6 +285,21 @@ class Usuario extends BaseController
         $session->remove($datos);
 
         return redirect()->to(base_url('/login'));
+    }
+    
+    public function inicioAdmin()
+    {
+        $session=session();
+        if ($session->get('logged_in')!=true&&$session->get('tipo')!=0){
+            return redirect()->to(base_url('login'));
+        }
+        $alias['nombre']=$session->get('alias');
+        $asistenciaM=model('AsistenciaM');
+        $totalVisitas['result']=$asistenciaM->totalVisitas();
+            return view('head').
+               view('menu',$alias).
+               view('/usuario/inicio').
+               view('footer',$totalVisitas);
     }
 
 }

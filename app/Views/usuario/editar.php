@@ -1,7 +1,14 @@
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-6"  >
-            <h2>Editar usuarios</h2>
+        <div class="col-6">
+            <?php $sesion=session();
+                  if($sesion->get('idUsuario')==$usuario[0]->idUsuario):?>
+                  <h2>Editar Perfil</h2>
+                  <?php endif?>
+            <?php $sesion=session();
+                  if($sesion->get('idUsuario')!=$usuario[0]->idUsuario):?>      
+            <h2>Editar usuario</h2>
+            <?php endif?>
            <?php //print_r ($usuario);?>    
             <form action="<?= base_url('usuario/actualizar/'); ?>" method="POST" style="margin-bottom: 50px;">
           

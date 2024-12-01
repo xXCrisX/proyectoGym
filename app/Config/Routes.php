@@ -14,6 +14,7 @@ $routes->post('/usuario/insertar','Usuario::insertar');
 
 $routes->get('/usuario/editar/(:num)','Usuario::editar/$1');
 $routes->post('/usuario/actualizar','Usuario::actualizar');
+$routes->get('/inicio/admin', 'Usuario::inicioAdmin');
 
 $routes->get('/usuario/eliminar/(:num)','Usuario::eliminar/$1');
 /**LOGIN de usuario */
@@ -37,6 +38,8 @@ $routes->get('/salirSocio','Socio::salirSocio');
 $routes->get('/entrenador/editar/(:num)','Entrenador::editar/$1');
 $routes->post('/entrenador/actualizar','Entrenador::actualizar');
 $routes->get('/entrenador/eliminar/(:num)','Entrenador::eliminar/$1');
+$routes->get('/inicio/entrenador','Entrenador::inicioEntrenador');
+$routes->get('/editar/Perfil/entrenador/(:num)','Entrenador::editarPerfil/$1');
 
 /**CRUD de pago */
 $routes->get('/pago', 'Pago::ver');
@@ -106,4 +109,13 @@ $routes->get('/socioDieta/agregar','SocioDieta::agregar');
 $routes->post('/socioDieta/insertar','SocioDieta::insertar');
 
 /**Inicio */
-$routes->get('/inicio','Pagina::ver');
+$routes->get('/inicio','Pagina::inicio');
+$routes->get('/sociorutinas','Pagina::rutinas');
+$routes->get('/rutina/(:num)','Pagina::verRutina/$1');
+$routes->get('/equipoSocio','Pagina::verEquipo');
+$routes->get('/dietasSocio','Pagina::Dietas');
+$routes->get('/dieta/(:num)','Pagina::verDieta/$1');
+$routes->get('/actividadSocio','Pagina::actividades');
+$routes->get('/actividad/insertar/(:num)','Pagina::insert/$1');
+$routes->get('/actividadSocio/validar','Pagina::validar');
+$routes->get('/pagoSocio','Pagina::pagos');

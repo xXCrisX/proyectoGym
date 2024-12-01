@@ -51,15 +51,13 @@ class SocioM extends Model
 
     public function validarSocio($alias,$cta)
     {
-        $dia=date('d');
-        $mes=date('m');
-        $anio=date('y');
         $db=db_connect();
-        $sql="SELECT s.idSocio,u.nombre,u.tipo,p.fechaFinPago FROM socio AS s
+        $sql="SELECT s.idSocio,u.nombre,u.tipo,p.fechaFinPago,s.foto FROM socio AS s
               INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario
               INNER JOIN pago AS p ON s.idSocio=p.idSocio
-              WHERE u.alias=" . "'" . $alias . "'"." AND u.cta=" . "'" . $cta. "'"."AND p.idPago=(SELECT MAX(p2.idPago) FROM pago AS p2
-                                                                                                  WHERE p2.fechaFinPago >= '".$anio."-".$mes."-".$dia."' )";
+              WHERE u.alias=" . "'" . $alias . "'"." AND u.cta=" . "'" . $cta. "'
+              ORDER BY p.idPago DESC
+              LIMIT 1";
         $query=$db->query($sql);
         return $query->getResult();
     }

@@ -57,4 +57,34 @@ class AsistenciaM extends Model
         $query=$db->query($sql);
         return $query->getResult();
     }
+
+    public function totalVisitas()
+    {
+        $db=db_connect();
+        $sql='SELECT  u.nombre,COUNT(a.idAsistencia) AS total FROM Asistencia AS a 
+              INNER JOIN socio AS s ON a.idSocio=s.idSocio 
+              INNER JOIN usuario AS u ON s.idUsuario=u.idUsuario  
+              GROUP BY u.nombre;';
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
+
+    public function asistenciaDia()
+    {
+        $db=db_connect();
+        $sql="SELECT CASE DAYOFWEEK(a.fecha)
+    WHEN 1 THEN 'domingo'
+    WHEN 2 THEN 'lunes'
+    WHEN 3 THEN 'martes'
+    WHEN 4 THEN 'miércoles'
+    WHEN 5 THEN 'jueves'
+    WHEN 6 THEN 'viernes'
+    WHEN 7 THEN 'sábado'
+END AS dia,
+COUNT(*) AS totalAsistencias
+FROM Asistencia a
+GROUP BY DAYOFWEEK(a.fecha);";
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
 }

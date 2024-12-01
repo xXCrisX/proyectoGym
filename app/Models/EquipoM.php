@@ -46,4 +46,13 @@ class EquipoM extends Model
         $query=$db->query($sql);
         return $query->getResult(); 
     }
+
+    public function getEquipo()
+    {
+        $db=db_connect();
+        $sql="SELECT * FROM Equipo
+              WHERE estado='operativo'";
+        $query=$db->query($sql);
+        return $query->getResult(); 
+    }
 }

@@ -66,4 +66,14 @@ class EntrenadorModel extends Model
         $query=$db->query($sql);
         return $query->getResult(); 
     }
+
+    public function editarPerfil($idUsuario)
+    {
+        $db=db_connect();
+        $sql="SELECT * FROM usuario AS u
+              INNER JOIN entrenador AS e ON u.idUsuario=e.idUsuario
+              WHERE u.idUsuario="."'".$idUsuario."'"."";
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
 }

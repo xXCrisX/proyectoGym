@@ -66,4 +66,14 @@ class ActividadModel extends Model
         $query=$db->query($sql);
         return $query->getResult();
     }
+
+    public function getActividades()
+    {
+        $db=db_connect();
+        $sql="SELECT * FROM actividad
+              WHERE fecha >= curdate()";
+        $query=$db->query($sql);
+        return $query->getResult();
+    }
+
 }

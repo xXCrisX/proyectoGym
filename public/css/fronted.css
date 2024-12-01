@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #2A2A2A;
     color: #f2f2f2;
     padding: 40px 20px;
     font-family: 'Arial', sans-serif;
@@ -23,7 +23,7 @@
 .footer h3 {
     margin-bottom: 15px;
     font-size: 20px;
-    color: #ffd700;
+    color: #5AC8FA;
 }
 
 .footer p,
@@ -49,11 +49,11 @@
 }
 
 .footer ul li a:hover {
-    color: #ffd700;
+    color: #5AC8FA;
 }
 
 .footer-social .social-icons a {
-    color: #f2f2f2;
+    color: #5AC8FA;
     font-size: 18px;
     margin-right: 15px;
     text-decoration: none;
@@ -61,7 +61,7 @@
 }
 
 .footer-social .social-icons a:hover {
-    color: #ffd700;
+    color: #5AC8FA;
 }
 
 .footer-bottom {
@@ -70,7 +70,7 @@
     border-top: 1px solid #333;
     padding-top: 10px;
     font-size: 12px;
-    color: #777;
+    color: #f2f2f2;
 }
 
 /* Responsive Styles */
@@ -95,4 +95,81 @@ html, body {
   /* Haz que el contenido principal se expanda para empujar el footer hacia abajo */
   .main-content {
     flex: 1;
+}
+.margen{
+    margin-bottom: 10px; margin-left:10px; margin-right:10px; margin-top:10px;
+}
+.nav-style{
+    background-color:#282725;
+}
+.nav-style a{
+    color:#F3F3F3;
+}
+.nav-style .nav-link:hover{
+    color: #900B09;
+}
+.nav-style li{
+    background-color:#282725;
+}
+.nav-style ul{
+    background-color:#282725;
+}
+.dropdown-item:hover {
+    background-color: blue; /* Cambia el color de fondo al pasar el cursor */
+    color: yellow; /* Cambia el color del texto */
+}
+.dropdown-item {
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container{
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+.container h1{
+    color: #FFD700 ;
+}
+.container h2{
+    color: #F5F5DC;
+}
+.container h3{
+    color: #FF7373;
+}
+.container{
+    color:#5AC8FA;
+}
+.container p{
+    color: #E0E0E0;
+}
+.row h1{
+    margin-bottom: 3%;
+}
+.logo img{
+    width: 50px;
+    height:50px;
+    background-image: url();
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.margen{
+ margin-left: 5px; margin-right: 10px;
+}
+
+.style-r h3{
+margin-top: 4%; margin-bottom: 4%; 
+}
+.style-r-ver img{
+    margin-bottom: 5%; margin-top: 5%; margin-left: 5%; margin-right: 5%;
+    width: 500px; height: 400px;
+}
+.style-r-ver h1,h2,p{
+    margin-bottom: 3%; margin-top: 3%; margin-left: 3%; margin-right: 3%;
+}
+.style-e img{
+    margin-bottom: 5%; margin-top: 5%; margin-left: 5%; margin-right: 5%;
+    width: 100px; height: 150px;
 }

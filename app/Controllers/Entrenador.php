@@ -6,7 +6,7 @@ class Entrenador extends BaseController
     public function editar($idEntrenador)
     {
         $session=session();
-        if ($session->get('logged_in')!=true&&$session->get('tipo')!=0){
+        if ($session->get('logged_in')!=true&&$session->get('tipo')<=1){
             return redirect()->to(base_url('login'));
         }
         $entrenadorM=model('EntrenadorModel');
@@ -19,7 +19,10 @@ class Entrenador extends BaseController
     }
 
     public function actualizar()
-    {
+    {$session=session();
+        if ($session->get('logged_in')!=true&&$session->get('tipo')<=1){
+            return redirect()->to(base_url('login'));
+        }
         $idEntrenador=$_POST['idEntrenador'];
         $entrenadorM=model('EntrenadorModel');
         $usuarioM=model('UsuarioM');
@@ -63,6 +66,9 @@ class Entrenador extends BaseController
             }
             $usuarioM->set($usuario)->where('idUsuario',$idUsuario)->update();
             $entrenadorM->set($entrenador)->where('idEntrenador',$idEntrenador)->update();
+            if($session->get('idUsuario')==$idUsuario){
+                return redirect()->to(base_url('/inicio/entrenador'));
+            }
             return redirect()->to(base_url('usuario'));
     }
 
@@ -74,5 +80,35 @@ class Entrenador extends BaseController
         $usuarioM->delete($idUsuario[0]->idUsuario);
         $entrenadorM->delete($idEntrenador);
         return redirect()->to(base_url('usuario'));
+    }
+
+    public function inicioEntrenador()
+    {
+        $session=session();
+        if ($session->get('logged_in')!=true && $session->get('tipo')!=1){
+            return redirect()->to(base_url('login'));
+        }
+        $alias['nombre']=$session->get('alias');
+        $asistenciaM=model('AsistenciaM');
+        $data['asistenciaD']=$asistenciaM->asistenciaDia();
+        return view('head').
+               view('menu',$alias).
+               view('/entrenador/inicio',$data).
+               view('footer');
+    }
+
+    public function editarPerfil($idUsuario)
+    {
+        $session=session();
+        if ($session->get('logged_in')!=true&&$session->get('tipo')<=1){
+            return redirect()->to(base_url('login'));
+        }
+        $entrenadorM=model('EntrenadorModel');
+        $data['entrenador']=$entrenadorM->editarPerfil($idUsuario);
+        $alias['nombre']=$session->get('alias');
+        return view('head').
+               view('menu',$alias).
+               view('entrenador/editar',$data).
+               view('footer');
     }
 }

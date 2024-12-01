@@ -28,5 +28,6 @@
         <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
     </div>
 </footer>
+<script src="<?=base_url('bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 </body>
 </html>
